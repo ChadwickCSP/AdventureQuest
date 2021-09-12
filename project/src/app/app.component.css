@@ -1,0 +1,24 @@
+#terminal {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    width: 1280px;
+    height: 720px;
+    margin-left:auto;
+    margin-right: auto;
+    font-family: monospace;
+    font-size:22px;
+}
+
+#output {
+    height: 660px;
+    overflow: scroll;
+    margin:0px 0px 22px 0px;
+}
+
+#userInput {
+    width: 1260px;
+    
+    font-family: monospace;
+    font-size: 22px;
+}
