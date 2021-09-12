@@ -4,16 +4,22 @@ A text based adventure engine.
 
 * [Overview](#overview)
 * [Getting Started](#getting-started)
-    * [Sign up for the project](#sign-up-for-the-project)
-    * [Clone your repository](#clone-your-repository)
+    * [Sign up for the Project](#sign-up-for-the-project)
+    * [Clone your Repository](#clone-your-repository)
     * [Play the Dragon's Lair](#play-the-dragons-lair)
-* [Choose a Platform](#choose-a-platform)
-    * [Unity](#unity)
-    * [Angular](#angular)
+    * [Setting up the Project](#setting-up-the-project)
+        * [Installing Node Version Manager](#installing-node-version-manager)
+        * [Initializing the Project](#initializing-the-project)
+        * [Running the Project](#running-the-project)
 * [Milestone 1](#milestone-1)
-
+    * [Flow Charts: The Dragon's Lair](#flow-charts-the-dragons-lair)
+    * [Identifying Code Segments](#identifying-code-segments)
 * [Milestone 2](#milestone-2)
+    * [Flaming Goat Adventure](#flaming-goat-adventure)
 * [Milestone 3](#milestone-3)
+    * [Design Document](#design-document)
+* [Milestone 4](#milestone-4)
+    * [Final Game](#final-game)
 * [Grading](#grading)
     * [Computational Thinking](#computational-thinking)
     * [Computing, Programming, and
@@ -23,66 +29,199 @@ A text based adventure engine.
 * [Appendix A: Flow Chart Components](#appendix-a-flow-chart-components)
 * [Appendix B: Keywords](#appendix-b-keywords)
 * [Appendix C: README.md](#appendix-c-readmemd)
+* [Appendix D: Creating an Adventure](#appendix-d-creating-a-room)
+
 
 ## Overview
 
 You will design a text based adventure game and implement it in the Adventure
 Quest Game Engine where it can be played by anyone in the world!
 
-## Sign up for the project
+## Getting Started
+
+### Sign up for the project
 
 Sign up for the project here: TODO
 
-## Choose a Platform
+### Clone your repository
 
-The Adventure Quest Game Engine has been implemented in both Unity and Angular.
-You may choose to complete your adventure in either (or both) of these
-platforms.
+After you have signed up for the project, you can clone it using Github Desktop.
 
-### Unity
 
-Unity is a cross-platform game engine that is used by both indie and industry
-video game developers. Unity provides a large library of tools such as built in
-physics, animation, and collision detection to help speed up video game
-development. It has grown rapidly in popularity and is updated on a regular
-basis. 
+1. Click the Current Repository drop down
 
-Here are a few games you may have heard of that were created in Unity:
+![Current Repo](support/current_repo.png)
 
-* Fall Guys
-* Mario Kart Tour
-* Hollow Knight
-* Life is Strange
-* Cuphead
-* Snipperclips
-* Beat Saber
-* Overcooked 2
+2. Click `Add` > `Clone Repository`
 
-If you choose Unity, you will be using the C# programming language.
+![Step 2](support/step2.png)
 
-Setup Instructions: [LINK](unity)
+3. Select the `GitHub.com` tab
 
-### Angular
+![Step 3](support/step3.png)
+
+4. Select the `adventure-quest-XXXXXX` respository and click clone. You may have
+   to click the refresh icon next to `Filter your repositores` before it will be
+   displayed.
+
+5. Open the project in `Visual Studio Code`
+
+### Play the Dragon's Lair
+
+The Dragon's Lair is a text adventure created by Mx. Collard to demonstrate the
+Adventure Quest Game Engine's API (Application Programming Interface).
+
+TODO
+
+
+### Setting up the project
+
+#### Install Node Version Manager
+
+##### Mac OS
+
+The easiest way to install Node Version Manager is to first install Homebrew.
+Homebrew is a package manager for Mac OS that makes it easy for users to install
+librarys and software all in one place.
+
+To install Homebrew:
+
+1. Open a terminal. 
+    * If you press (Command + Space) you will open Searchlight Finder.
+    * Type "Terminal" and press enter
+2. Run this command: 
+    * `/bin/bash -c "$(curl -fsSL
+      https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
+3. Follow the on screen instruction. When you're prompted for a password, type
+   the password you use to log into your computer. Installation may take some
+   time.
+
+After Homebrew is installed, you can install Node Version Manager by running the
+following commands:
+
+1. `brew update`
+2. `brew install nvm`
+
+To verify that Node Version Manager is installed, run the following command:
+
+`nvm --version`
+
+You should see something like:
+
+`0.38.0`
+
+##### Windows
+
+To get Node Version Manager, download `nvm-setup.zip` from this page:
+[LINK](https://github.com/coreybutler/nvm-windows/releases/tag/1.1.7)
+
+Unzip the file and run the installer.
+
+To verify that Node Version Manager is installed:
+
+1. Open a Terminal
+    * Press the Windows Key
+    * Type `Git Bash` and press entedr
+2. In the terminal window type `nvm version`
+
+If it is installed, you should see something like:
+
+`1.1.7`
+
+
+#### Initializing the Project
+
+Next, we will initialize the project, downloading all the necessary dependencies
+and running it locally on your computer.
+
+1. First, open your project in Visual Studio Code
+2. Press (Command + Shift + P) to see the Command Pallette
+3. Search for `Terminal: Select Default Profile`
+    * On Mac, select `bash`
+    * On Windows, Select `Git Bash`
+4. Press (Command + Shift + P) to open the Command Pallette
+5. Search for `Create New Terminal`
+    * This will open a terminal at the bottom of Visual Studio Code, click into
+      it.
+6. Run the command `cd project`
+    * The `cd` command stands for Change Directory, it will move the terminal to
+      be in the `project` folder
+7. Run the command `nvm install 16.9.1`
+    * This command will download a program called Node which is used to run
+      javascript
+8. Run the command `nvm use 16.9.1`
+    * This command tells your terminal to use this version of Node
+9. Run the command `npm install`
+    * This command will install all of the dependencies to run Adventure Quest.
+      This command will take several minutes to run.
+
+If all goes well, you're ready to run the project!
+
+#### Running the Project
+
+##### Angular
+
+This project uses a framework called Angular.
 
 Angular is a popular open-source web development platform developed and
 maintained by Google. Angular provides a suite of tools to help build, test, and
 update code. Angular is an industry standard and knowing it is a highly sought
-skill.
+skill. Angular uses the Typescript programming language.
 
-If you choose Angular, you will be using the Typescript programming language.
+##### Creating a Server
 
-Setup Instructions: [LINK](angular)
+To create a server to run the project:
+
+1. Open a Terminal (if you have not done so already)
+    * (Command + Shift + P) -> `Create New Terminal`
+2. Make sure you're in the project folder
+    * `cd project`
+3. Run the command `npx ng serve -o`
+    * This command runs Angular, creates a debugging server on your computer,
+      and opens your default web browser on the project which is running at
+      `localhost:4200`.
 
 ## Milestone 1
 
+* **E Period** - Wednesday, September 22nd @ 11:59PM
+* **C Period** - Thursday, September 23rd @ 11:59PM
+
+### Flow Charts
+
+Read through and translate each of the room's in the Dragon's Lair adventure
+into a procedure flow chart.
+
+### Identifying Code Segments
+
+Using the Adventure Quest Engine flow chart and source code, identify X
+significant sequences, X selections, and X iterations.
 
 ### Milestone 1 Deliverables
 
 ## Milestone 2
 
+* **E Period** - Tuesday, September 28th @ 11:59PM
+* **C Period** - Wednesday, September 29th @ 11:59PM
+
+### Flaming Goat Adventure
+
 ### Milestone 2 Deliverables
 
 ## Milestone 3
+
+* **E Period** - Monday, October 4th @ 11:59PM
+* **C Period** - Tuesday, October 5th @ 11:59PM
+
+### Design Document
+
+### Milestone 3 Deliverables
+
+## Milestone 4
+
+* **E Period** - Monday, October 11th @ 11:59PM
+* **C Period** - Tuesday, October 12th @ 11:59PM
+
+### Create a Text Adventure
 
 ### Milestone 3 Deliverables
 
