@@ -323,11 +323,81 @@ An entry point serves as a label for the start of a flow chart. An entry point
 should have no incomming arrows and should contain exactly one outgoing arrow.
 It is denoted as a box with round corners.
 
+### Procedure
+![Sum Procedure](support/procedure_sum.png)
+
+A procedure is a special type of entry point. A procedure may have zero or Data
+arguments specified by incomming arrows. A procedure must have exactly one
+outgoing arrow. A procedure is denoted by a box with two vertical lines near the
+ends. The name of the procedure is written inside the box followed by the order
+of the arguments.
+
+A procedure is a special type of Entry Point which is expected to reach a
+Terminal. Upon reaching a Terminal, a procedure will return to the point in the
+flowchart from which it was called. Typically (but not always), the procedure
+will return Data which can be used by the calling Process. If a procedure has a
+path that does not reach a Terminal, it is considered malformed.
+
+#### Calling a Procedure
+
+Calling a procedure is typically done as part of a Process.
+
+![Example Sum Procedure](support/procedure_sum_call.png)
+
+The example above calls the `sum` procedure and specifies the parameters `(5,
+7)`. This sets the argument `x` to be the value `5` and the argument `y` to be
+the value `7` during the call of the procedure. If you follow the `sum`
+procedure from above, it will perform addition on `x` and `y` storing it into a
+variable `result`. Finally, upon reaching the `Terminal` it returns the value
+stored in `result`, in this case `12`. When the procedure `returns` the value
+`12` is substituted in place of `sum(5,7)` resulting in the assignment `z = 12`.
+
 ### Process
 ![Process](support/process.png)
 
 A process describes an action that is taken. A process must have at least one
 (but may have more) incomming arrow and exactly 1 outgoing arrow.
+
+### Display
+
+![Display](support/display.png)
+
+A display block is a type of process which describes an output that is displayed
+to the user. The output can be just about anything but in most flow charts it
+contains text, an image, or text describing an image. Just like a process, a
+display must have at least one incomming arrow and exactly 1 outgoing arrow.
+
+### User Input
+
+![User Input](support/user_input.png)
+
+A user input block is a type of process which waits for input from a user.
+Typically it contains a message such as `Read from X then assign result to Y`
+where `X` is an input device such as `keyboard`, `mouse`, or `microphone` and
+`Y` is the name of a variable. However, it is possible to ignore the input. This
+might be written as `Read from keyboard then ignore the result`. This is useful
+if you want the user to press enter, or click a continue button.
+
+### Data
+
+![Data](support/data.png)
+
+A data block is a type of Process block which specifies that space should be
+allocated to store computer data. A data block contains two lines, a Type and a
+name. The Type specifies the type of data that will be stored and the name
+specifies the variable name to be used to refer to the stored data.
+
+Typically, a data block must have one or more incomming arrows and exactly one
+outgoing arrow. However, if the data block's outgoing arrow is pointed to a
+Procedure, the data block should have no incomming arrows. In this case, the
+data is expected to be passed to the procedure from the calling process.
+
+#### Accessing Data
+
+A data variable may only be used in a block in which the variable has previously
+been declared using a data block. If a block has access to a variable, the
+variable is said to be `in scope`. Similarly, if a block does **not** have
+access to a variable, the variable is said to be `out of scope`.
 
 ### Decision
 ![Decision](support/decision.png)
@@ -352,8 +422,6 @@ a terminal block is represented by a box with rounded corners. However, a
 terminal does not have any outgoing arrows. It must have at least one incomming
 arrow and may have multiple incomming arrows.
 
-### Procedure
-TODO
 
 ## Appendix B: Keywords
 
