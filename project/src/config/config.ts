@@ -1,4 +1,4 @@
-import { DragonsLairAdventure } from "src/adventure/dragonsLair/dragonsLair";
+import { DragonsLairAdventure } from "src/adventure/DragonsLair/DragonsLair";
 import { ITextAdventure } from "src/support/adventure";
 
 export class Config {

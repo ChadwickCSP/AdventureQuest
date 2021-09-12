@@ -1,6 +1,6 @@
 import { ITextAdventure } from "src/support/adventure";
 import { IRoom } from "src/support/room";
-import { DragonsLairAdventure as DragonsLairAdventure } from "../dragonsLair";
+import { DragonsLairAdventure as DragonsLairAdventure } from "../DragonsLair";
 import { Lair } from "./Lair";
 import { Tunnel } from "./Tunnel";
 
@@ -25,7 +25,7 @@ cave.`;
         }
         else if (input === "chest" && dla.hasKey) {
 
-            if (dla.hasSword == false) {
+            if (dla.hasSword === false) {
                 dla.print("The chest is locked.\n");
                 dla.sleep(1);
                 dla.print("You take the key from your pocket and unlock the chest.\n");

@@ -1,6 +1,6 @@
 import { ITextAdventure } from "src/support/adventure";
 import { IRoom } from "src/support/room";
-import { DragonsLairAdventure as DragonsLairAdventure } from "../dragonsLair";
+import { DragonsLairAdventure as DragonsLairAdventure } from "../DragonsLair";
 import { Tunnel } from "./Tunnel";
 
 
