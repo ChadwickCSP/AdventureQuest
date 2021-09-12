@@ -128,7 +128,6 @@ If it is installed, you should see something like:
 
 `1.1.7`
 
-
 #### Initializing the Project
 
 Next, we will initialize the project, downloading all the necessary dependencies
@@ -188,15 +187,39 @@ To create a server to run the project:
 
 ### Flow Charts
 
-Read through and translate each of the room's in the Dragon's Lair adventure
-into a procedure flow chart.
+The Dragon's Lair adventure contains 7 rooms. For this milestone, you will study
+the code for each of these rooms and translate their `handleInput` methods into
+procedure flowcharts. 3 of the rooms have been complete for you. As you complete
+each room, you should add its code and flowchart to the README.md file in the
+`DragonsLair` folder. For more information on procedure flowcharts, see
+[Appendex C: Procedure](#procedure)
 
-### Identifying Code Segments
+#### Completed Rooms
+1. [Cave Entrance](project/src/adventure/DragonsLair/rooms/CaveEntrance.ts)
+    * [Flowchart](DragonsLair/README.md#cave-entrance)
+2. [Lair](project/src/adventure/DragonsLair/rooms/Lair.ts)
+    * [Flowchart](DragonsLair/README.md#lair)
+3. [Tunnel](project/src/adventure/DragonsLair/rooms/Tunnel.ts)
+    * [Flowchart](DragonsLair/README.md#tunnel)
 
-Using the Adventure Quest Engine flow chart and source code, identify X
-significant sequences, X selections, and X iterations.
+#### Rooms to Complete
+1. [Dead End](project/src/adventure/DragonsLair/rooms/DeadEnd.ts)
+2. [Gym](project/src/adventure/DragonsLair/rooms/Gym.ts)
+3. [Mouth of Cave](project/src/adventure/DragonsLair/rooms/MouthOfCave.ts)
+4. [Snoring](project/src/adventure/DragonsLair/rooms/Snoring.ts)
 
 ### Milestone 1 Deliverables
+
+To submit Milestone 1, you should complete the Flowcharts section of the
+[DragonsLair/README.md](DragonsLair/README.md) document.
+
+When you have completed the Flowcharts section, committed and pushed it, you
+will create a tag called `milestone-1`. If you later decide you would like to
+change the commit for `milestone-1` you may create additional tags with a
+version number. For example, `milestone-1-v2` or `milestone-1-v3`. For final
+grading, the `milestone-1` tag with the greatest version number will be used.
+After creating your tag, don't forget to push it to Github and verify it is
+available online.
 
 ## Milestone 2
 
@@ -328,6 +351,9 @@ A terminal block indicates the end of the sequence. Similar to the Entry Point,
 a terminal block is represented by a box with rounded corners. However, a
 terminal does not have any outgoing arrows. It must have at least one incomming
 arrow and may have multiple incomming arrows.
+
+### Procedure
+TODO
 
 ## Appendix B: Keywords
 
