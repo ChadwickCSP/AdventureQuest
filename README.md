@@ -60,7 +60,7 @@ After you have signed up for the project, you can clone it using Github Desktop.
 
 ![Step 3](support/step3.png)
 
-4. Select the `adventure-quest-XXXXXX` respository and click clone. You may have
+4. Select the `adventure-quest-XXXXXX` repository and click clone. You may have
    to click the refresh icon next to `Filter your repositores` before it will be
    displayed.
 
@@ -82,7 +82,7 @@ TODO
 
 The easiest way to install Node Version Manager is to first install Homebrew.
 Homebrew is a package manager for Mac OS that makes it easy for users to install
-librarys and software all in one place.
+libraries and software all in one place.
 
 To install Homebrew:
 
@@ -121,7 +121,7 @@ To verify that Node Version Manager is installed:
 
 1. Open a Terminal
     * Press the Windows Key
-    * Type `Git Bash` and press entedr
+    * Type `Git Bash` and press enter
 2. In the terminal window type `nvm version`
 
 If it is installed, you should see something like:
@@ -134,11 +134,11 @@ Next, we will initialize the project, downloading all the necessary dependencies
 and running it locally on your computer.
 
 1. First, open your project in Visual Studio Code
-2. Press (Command + Shift + P) to see the Command Pallette
+2. Press (Command + Shift + P) to see the Command Palette
 3. Search for `Terminal: Select Default Profile`
     * On Mac, select `bash`
     * On Windows, Select `Git Bash`
-4. Press (Command + Shift + P) to open the Command Pallette
+4. Press (Command + Shift + P) to open the Command Palette
 5. Search for `Create New Terminal`
     * This will open a terminal at the bottom of Visual Studio Code, click into
       it.
@@ -192,7 +192,7 @@ the code for each of these rooms and translate their `handleInput` methods into
 procedure flowcharts. 3 of the rooms have been complete for you. As you complete
 each room, you should add its code and flowchart to the README.md file in the
 `DragonsLair` folder. For more information on procedure flowcharts, see
-[Appendex C: Procedure](#procedure)
+[Appendix C: Procedure](#procedure)
 
 #### Completed Rooms
 1. [Cave Entrance](project/src/adventure/DragonsLair/rooms/CaveEntrance.ts)
@@ -320,43 +320,55 @@ email with at least two proposed times you would like to meet.
 ![Entry Point](support/entry_point.png)
 
 An entry point serves as a label for the start of a flow chart. An entry point
-should have no incomming arrows and should contain exactly one outgoing arrow.
-It is denoted as a box with round corners.
+should have no incoming arrows and should contain exactly one outgoing arrow. It
+is denoted as a box with round corners.
 
 ### Procedure
 ![Sum Procedure](support/procedure_sum.png)
 
-A procedure is a special type of entry point. A procedure may have zero or Data
-arguments specified by incomming arrows. A procedure must have exactly one
-outgoing arrow. A procedure is denoted by a box with two vertical lines near the
-ends. The name of the procedure is written inside the box followed by the order
-of the arguments.
+A procedure is a nested flowchart that allows for a reusable sub-flowchart to be
+defined.
 
-A procedure is a special type of Entry Point which is expected to reach a
-Terminal. Upon reaching a Terminal, a procedure will return to the point in the
-flowchart from which it was called. Typically (but not always), the procedure
-will return Data which can be used by the calling Process. If a procedure has a
-path that does not reach a Terminal, it is considered malformed.
+A procedure is drawn as a flowchart nested within a box with two vertical bars
+on either end. 
+
+When defining a procedure, it is possible to define "inputs" to the procedure.
+These are referred to as the procedure's `arguments`. The procedure's arguments
+are represented by Data blocks on the outside of the procedure with outgoing
+arrows pointing to the procedures Entry point.
+
+A procedure should contain exactly one Entry point with a label defining the
+procedures name as well as an argument list defining the order in which the
+arguments are expected to be received.
+
+Just like a normal flowchart, a procedure's flowchart must end at a Terminal.
+However, a procedure's Terminal describes the value that is returned by the
+procedure.
 
 #### Calling a Procedure
 
-Calling a procedure is typically done as part of a Process.
+Within a flowchart, you will often want to call a previously defined procedure.
 
 ![Example Sum Procedure](support/procedure_sum_call.png)
 
-The example above calls the `sum` procedure and specifies the parameters `(5,
+The example above calls the `sum` procedure and specifying the parameters `(5,
 7)`. This sets the argument `x` to be the value `5` and the argument `y` to be
 the value `7` during the call of the procedure. If you follow the `sum`
 procedure from above, it will perform addition on `x` and `y` storing it into a
 variable `result`. Finally, upon reaching the `Terminal` it returns the value
-stored in `result`, in this case `12`. When the procedure `returns` the value
-`12` is substituted in place of `sum(5,7)` resulting in the assignment `z = 12`.
+stored in `result`, in this case `12`. Notice, this is denoted in our flowchart
+with the label `result` being placed on the outgoing arrow. This allows for the
+result to be used in the following block. **Note**: The label on the arrow may
+be anything; it is simply a way of denoting that the result will be used.
+Furthermore, the resulting value is only available in the block immediately
+following the call. This is why the result must be assigned in the block that
+follows. In this case, the result of the call of `sum(5,7)` is assigned to `z`.
 
 ### Process
 ![Process](support/process.png)
 
 A process describes an action that is taken. A process must have at least one
-(but may have more) incomming arrow and exactly 1 outgoing arrow.
+(but may have more) incoming arrow and exactly 1 outgoing arrow.
 
 ### Display
 
@@ -365,7 +377,7 @@ A process describes an action that is taken. A process must have at least one
 A display block is a type of process which describes an output that is displayed
 to the user. The output can be just about anything but in most flow charts it
 contains text, an image, or text describing an image. Just like a process, a
-display must have at least one incomming arrow and exactly 1 outgoing arrow.
+display must have at least one incoming arrow and exactly 1 outgoing arrow.
 
 ### User Input
 
@@ -387,10 +399,10 @@ allocated to store computer data. A data block contains two lines, a Type and a
 name. The Type specifies the type of data that will be stored and the name
 specifies the variable name to be used to refer to the stored data.
 
-Typically, a data block must have one or more incomming arrows and exactly one
+Typically, a data block must have one or more incoming arrows and exactly one
 outgoing arrow. However, if the data block's outgoing arrow is pointed to a
-Procedure, the data block should have no incomming arrows. In this case, the
-data is expected to be passed to the procedure from the calling process.
+Procedure, the data block should have no incoming arrows. In this case, the data
+is expected to be passed to the procedure from the calling process.
 
 #### Accessing Data
 
@@ -412,21 +424,21 @@ condition and one for the no condition.
 
 A connector block indicates that the flow chart should continue from another
 Entry Point, typically on a different page. A connector must have at least one
-(but may have more) incomming arrow and no outgoing arrows.
+(but may have more) incoming arrow and no outgoing arrows.
 
 ### Terminal
 ![Terminal](support/terminal.png)
 
 A terminal block indicates the end of the sequence. Similar to the Entry Point,
 a terminal block is represented by a box with rounded corners. However, a
-terminal does not have any outgoing arrows. It must have at least one incomming
-arrow and may have multiple incomming arrows.
+terminal does not have any outgoing arrows. It must have at least one incoming
+arrow and may have multiple incoming arrows.
 
 
 ## Appendix B: Keywords
 
 ### Sequence
-Sequencing is the sequential exeution of operations. A **significant** sequence
+Sequencing is the sequential execution of operations. A **significant** sequence
 is a sequence in which the order of operations is important to the result of the
 sequence.
 
@@ -491,9 +503,9 @@ help you catch any formatting errors you might have.
 
 ### Headers
 
-In Markdown, headers are denoted using one or more octothorpes (`#`) followed by
-the text you would like for the header. The more octothorpes you use, the
-smaller the header will be. For example:
+In Markdown, headers are denoted using one or more octothorps (`#`) followed by
+the text you would like for the header. The more octothorps you use, the smaller
+the header will be. For example:
 
 ```
 # Header 1
@@ -511,8 +523,8 @@ Use headers to create different sections in your Markdown files.
 
 ### Code Boxes
 
-Sometimes you want to be able to provide preformatted code with syntax
-highlighting. To do this, you surround the code in three backticks: (```) For
+Sometimes you want to be able to provide pre-formatted code with syntax
+highlighting. To do this, you surround the code in three back-ticks: (```) For
 example:
 
 ![Backticks](support/backticks.png)
