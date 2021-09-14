@@ -12,7 +12,7 @@
 
 #output {
     height: 660px;
-    overflow: scroll;
+    overflow: hidden;
     margin:0px 0px 22px 0px;
 }
 
