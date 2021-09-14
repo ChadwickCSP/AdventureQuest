@@ -72,19 +72,21 @@ class WorkerEngine implements Engine {
       }
 
       const request: XMLHttpRequest = new XMLHttpRequest();
+      const requestURL: string = "assets/" + resourceLocation;
       request.addEventListener("load", (e) => {
         let lines: string[] = [];
         if (request.status >= 200 && request.status < 300) {
           lines = request.responseText.split('\n');
         } else {
           lines = [`Could not load file: "${resourceLocation}". Error Code: ${request.status} - ${request.statusText}`];
+          console.error(`Could not load: ${requestURL}`);
         }
         this.fileCache.set(resourceLocation, lines);
         this.printLines(lines, delay);
         resolve();
         return;
       });
-      request.open("GET", "../assets/" + resourceLocation);
+      request.open("GET", requestURL);
       request.send();
     });
   }
