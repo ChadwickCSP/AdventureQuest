@@ -1,4 +1,7 @@
 
+/**
+ * A PrintMessage is created when an adventure executes a print command.
+ */
 export class PrintMessage {
     public readonly message: string;
     public readonly TYPE = "PrintMessage";
@@ -8,6 +11,9 @@ export class PrintMessage {
     }
 }
 
+/**
+ * An InputMessage is created when a user types a message into the program.
+ */
 export class InputMessage {
     public readonly message: string;
     public readonly TYPE = "InputMessage";;
