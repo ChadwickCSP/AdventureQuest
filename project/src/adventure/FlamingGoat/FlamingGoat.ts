@@ -5,7 +5,7 @@ import { SubwayPlatform } from "./rooms/SubwayPlatform";
 export class FlamingGoatAdventure extends AbstractTextAdventure {
 
     public isGoatOnFire: boolean = true;
-    public hasSprite: boolean = false;
+    public hasSpryte: boolean = false;
 
     getName(): string {
         return "Flaming Goat";
@@ -21,7 +21,7 @@ export class FlamingGoatAdventure extends AbstractTextAdventure {
     async onStart(): Promise<IRoom> {
 
         this.isGoatOnFire = true;
-        this.hasSprite = false;
+        this.hasSpryte = false;
 
         await this.printTextFile("FlamingGoat/title.txt");
         this.print("\n                           A text adventure by Goat Man Jones\n")
