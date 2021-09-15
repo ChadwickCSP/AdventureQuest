@@ -29,7 +29,6 @@ A text based adventure engine.
 * [Appendix A: Flow Chart Components](#appendix-a-flow-chart-components)
 * [Appendix B: Keywords](#appendix-b-keywords)
 * [Appendix C: README.md](#appendix-c-readmemd)
-* [Appendix D: Creating an Adventure](#appendix-d-creating-a-room)
 
 
 ## Overview
@@ -557,16 +556,17 @@ Your design document should include the following:
 
 ### Milestone 3 Deliverables
 
-To submit Milestone 3, you should complete a design document for your text adventure. This should be a README.md file
-within a new folder named after your adventure.
+To submit Milestone 3, you should complete a design document for your text
+adventure. This should be a README.md file within a new folder named after your
+adventure.
 
-When you have finished your design document, you should commit and push
-your work. Then, you will create a tag called `milestone-3`. If you later decide
-you would like to change the commit for `milestone-3` you may create additional
-tags with a version number. For example, `milestone-3-v2` or `milestone-3-v3`.
-For final grading, the `milestone-3` tag with the greatest version number will
-be used. After creating your tag, don't forget to push it to GitHub and verify
-it is available online.
+When you have finished your design document, you should commit and push your
+work. Then, you will create a tag called `milestone-3`. If you later decide you
+would like to change the commit for `milestone-3` you may create additional tags
+with a version number. For example, `milestone-3-v2` or `milestone-3-v3`. For
+final grading, the `milestone-3` tag with the greatest version number will be
+used. After creating your tag, don't forget to push it to GitHub and verify it
+is available online.
 
 ## Milestone 4
 
@@ -582,16 +582,16 @@ own Text Adventure. Ask lots of questions, post on piazza, and have fun!
 
 ### Milestone 4 Deliverables
 
-To submit Milestone 4, you should complete your text adventure. This should be placed
-within the [project/src/adventure/](project/src/adventure/) folder.
+To submit Milestone 4, you should complete your text adventure. This should be
+placed within the [project/src/adventure/](project/src/adventure/) folder.
 
-When you have finished your implementation, you should commit and push
-your work. Then, you will create a tag called `milestone-4`. If you later decide
-you would like to change the commit for `milestone-4` you may create additional
-tags with a version number. For example, `milestone-4-v2` or `milestone-4-v3`.
-For final grading, the `milestone-4` tag with the greatest version number will
-be used. After creating your tag, don't forget to push it to GitHub and verify
-it is available online.
+When you have finished your implementation, you should commit and push your
+work. Then, you will create a tag called `milestone-4`. If you later decide you
+would like to change the commit for `milestone-4` you may create additional tags
+with a version number. For example, `milestone-4-v2` or `milestone-4-v3`. For
+final grading, the `milestone-4` tag with the greatest version number will be
+used. After creating your tag, don't forget to push it to GitHub and verify it
+is available online.
 
 ## Grading
 
@@ -600,11 +600,7 @@ it is available online.
 In this assignment, you will demonstrate your understanding of flow charts,
 sequencing, selection, and iteration.
 
-| Advanced                                                                    | Proficient                                                                                                        | Basic                                                                                                         | Below Basic                                  |
-|-----------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|----------------------------------------------|
-| Identifies at least 2 significant sequences, 2 selections, and 2 iterations | Identifies at least 5 components in their flow chart including at least 1 sequence, 1 selection, and 1 iteration. | Identifies the required sequencing, selection, and iteration sections of 5-2-1-1 in the provided source code. |                                              |
-| Attempts to write "Fake Code" for at least 2 of their identified sections.  |                                                                                                                   |                                                                                                               |                                              |
-|                                                                             | Completes a flow diagram for another game                                                                         | Completes a flow diagram for 5-2-1-1                                                                          | Does not complete a flow diagram for 5-2-1-1 |
+TODO
 
 ### Computing, Programming, and Practice
 
@@ -615,25 +611,15 @@ document describing how your flow diagram relates to your chosen game's
 instructions. 
 
 
+TODO
 
-| Advanced                                                                                                                   | Proficient                                                                                                                           | Basic                                                                         | Below Basic                                                  |
-|----------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------|--------------------------------------------------------------|
-|                                                                                                                            | Student created a tag for all milestones                                                                                             | Student tagged some of their milestones                                       | Student did not tag any of their milestones                  |
-|                                                                                                                            | Student commits and pushes their flow diagram images to their repository.                                                            | Student commits and pushes a flow diagram  for 5-2-1-1 into their repository. | Student does not include a complete flow diagram for 5-2-1-1 |
-| Student's README.md is properly formatted and contains images of their flow diagrams  embedded directly into the README.md | Student's README.md contains a formally  written explanation describing how their flow diagram meets the rules of their chosen game. | Student provides a README.md in their repository.                             | Student does not provide a README.md in their repository.    |
 ### Skills of a Programmer
 
 Your skills of a programmer covers your Student Log repository, your in class
 time management, meeting deadlines, asking for help when needed, and helping
 others when able.
 
-| Advanced                                                                                                                  | Proficient                                                                                                                                                | Basic                                                                                                                                   | Below Basic                                                                                         |
-|---------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
-| Manages time well in class,  stays focused on work at hand at almost all times                                            | Focuses on work in class                                                                                                                                  | Focuses at times, can get distracted                                                                                                    | Uses class time poorly, is frequently distracted                                                    |
-| Meets all deadlines, ahead of schedule by at least 4 hours.                                                               | Meets deadlines or asks for an extension at least 48 hours ahead of time.                                                                                 | Delivers close to deadline, may be late  by a day or two                                                                                | Delivers work late or not at all                                                                    |
-| Participated on Piazza by asking a question, answering a question, or creating a helpful note for other students.         | Seeks assistance when needed                                                                                                                              | Needs prompting to seek assistance                                                                                                      | Does not seek assistance or ask for help when needed                                                |
-| Almost all log entries are pushed after creating them.                                                                    | Almost all log entries provide a consistent commit timestamp relative to the date mentioned in the entry. All log entries are pushed prior to milestones. | Log entries follow the proper  sign-on and sign-off format.                                                                             | Few or no log entries follow the proper sign-on and sign-off format.                                |
-| Student creates a sign-on and sign-off log entry  every class and between each block period. Only missing 1 or 2 entries. | Student creates a sign-on and sign-off log entry  almost every class and between each block period. Only missing 1 or 2 entries.                          | Student creates a sign-on and sign-off log entry most classes and almost always between each block period. Only missing 3 or 4 entries. | Student frequently misses creating a sign-on and sign-off log entry. Missing 5 or more log entries. |
+TODO
 
 ## Getting Help
 
