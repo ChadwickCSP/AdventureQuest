@@ -42,7 +42,7 @@ Quest Game Engine where it can be played by anyone in the world!
 The Dragon's Lair is a text adventure created by Mx. Collard to demonstrate the
 Adventure Quest Game Engine's API (Application Programming Interface). The API
 defines a protocol that if followed, allows for a text adventure to be created
-by defining the rooms that comprise the adventure. For the first Milestone of 
+by defining the rooms that comprise the adventure. For the first Milestone of
 this project, you will study the code of this text adventure.
 
 Play The Dragon's Lair:
@@ -201,6 +201,9 @@ To create a server to run the project:
 * **E Period** - Wednesday, September 22nd @ 11:59PM
 * **C Period** - Thursday, September 23rd @ 11:59PM
 
+For this milestone, you will study the source code of [The Dragon's
+Lair](#the-dragons-lair) adventure.
+
 ### Flow Charts
 
 The Dragon's Lair adventure contains 7 rooms. For this milestone, you will study
@@ -242,9 +245,57 @@ available online.
 * **E Period** - Tuesday, September 28th @ 11:59PM
 * **C Period** - Wednesday, September 29th @ 11:59PM
 
+For this milestone, you will finish the implementation of a short 2 room
+adventure.
+
 ### Flaming Goat Adventure
 
+The Flaming Goat adventure is a short 2 room text adventure which requires
+cunning and a keyboard to complete!
+
+Play a completed version of Flaming Goat:
+[LINK](https://chadwickcsp.github.io/AdventureQuest/FlamingGoat/)
+
+Flaming Goat Design Document and Flowcharts:
+[FlamingGoat/README.md](FlamingGoat/README.md)
+
+#### Implement the Subway Platform Room
+
+In the Flaming Goat adventure, the player starts on the Subway Platform. Your
+first task is to implement it to match the flowchart from the [design
+document](FlamingGoat/README.md).
+
+You will edit this file:
+[project/src/adventure/FlamingGoat/rooms/SubwayPlatform.ts](project/src/adventure/FlamingGoat/rooms/SubwayPlatform.ts)
+
+##### Getting Started
+
+TODO: Add tutorial for running the game locally and adding your first if statement.
+
+#### Implement the Escalator Room
+
+The Escalator Room is also defined on the [design
+document](FlamingGoat/README.md). Use the flowchart to complete the Escalator
+Room.
+
+You will edit this file:
+[project/src/adventure/FlamingGoat/rooms/Escalator.ts](project/src/adventure/FlamingGoat/rooms/Escalator.ts)
+
+
 ### Milestone 2 Deliverables
+
+To submit Milestone 2, you should complete your implementation of the Flaming
+Goat adventure as well as update the code sections on the design document for
+the Flaming Goat: [FlamingGoat/README.md](FlamingGoat/README.md).
+
+When you have finished your implementation and updated the code sections of the
+[FlamingGoat/README.md](FlamingGoat/README.md) file, you should commit and push
+your work. Then, you will create a tag called `milestone-2`. If you later decide
+you would like to change the commit for `milestone-1` you may create additional
+tags with a version number. For example, `milestone-2-v2` or `milestone-2-v3`.
+For final grading, the `milestone-2` tag with the greatest version number will
+be used. After creating your tag, don't forget to push it to GitHub and verify
+it is available online.
 
 ## Milestone 3
 
@@ -520,8 +571,8 @@ help you catch any formatting errors you might have.
 ### Headers
 
 In Markdown, headers are denoted using one or more octothorpes (`#`) followed by
-the text you would like for the header. The more octothorpes you use, the smaller
-the header will be. For example:
+the text you would like for the header. The more octothorpes you use, the
+smaller the header will be. For example:
 
 ```
 # Header 1
