@@ -1,7 +1,11 @@
 # AdventureQuest
 
 A text based adventure engine.
+
+## Table of Contents
+
 - [AdventureQuest](#adventurequest)
+  - [Table of Contents](#table-of-contents)
   - [Overview](#overview)
   - [The Dragon's Lair](#the-dragons-lair)
   - [Getting Started](#getting-started)
