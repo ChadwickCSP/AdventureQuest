@@ -15,8 +15,14 @@ On the far wall is an [elevator].`
     }
 
     async handleInput(adventure: ITextAdventure): Promise<IRoom> {
+        // Convert the adventure to a DragonsLairAdventure so you can access the 
+        // DragonsLairAdventure variables.
         const dla: DragonsLairAdventure = adventure as DragonsLairAdventure;
+
+        // Read input from the user, set it to lowercase, and remove all whitespace
         const input: string = (await dla.getInput()).toLowerCase().trim();
+
+        // Check to see if the user typed a valid command
         if (input === "weights" && dla.strength < 10) {
             dla.print("You pick up the weights and do a rep!\n");
             dla.strength = dla.strength + 6;

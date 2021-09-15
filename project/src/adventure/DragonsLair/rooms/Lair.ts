@@ -16,8 +16,14 @@ dragon. If you could [slay] it, you would be a hero!`;
     }
 
     async handleInput(adventure: ITextAdventure): Promise<IRoom> {
+        // Convert the adventure to a DragonsLairAdventure so you can access the 
+        // DragonsLairAdventure variables.
         const dla: DragonsLairAdventure = adventure as DragonsLairAdventure;
+
+        // Read input from the user, set it to lowercase, and remove all whitespace
         const input: string = (await dla.getInput()).toLowerCase().trim();
+
+        // Check to see if the user typed a valid command
         if (input === "back")
             {
                 dla.print("You head back the way you came.\n");

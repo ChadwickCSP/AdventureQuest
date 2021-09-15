@@ -17,8 +17,14 @@ and the other leads to the [right]. You can also see the [entrance] of the cave.
     }
 
     async handleInput(adventure: ITextAdventure): Promise<IRoom> {
+        // Convert the adventure to a DragonsLairAdventure so you can access the 
+        // DragonsLairAdventure variables.
         const dla: DragonsLairAdventure = adventure as DragonsLairAdventure;
+
+        // Read input from the user, set it to lowercase, and remove all whitespace
         const input: string = (await dla.getInput()).toLowerCase().trim();
+
+        // Check to see if the user typed a valid command
         if (input === "right")
             {
                 dla.print("You take the path to the right.\n");
