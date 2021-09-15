@@ -270,18 +270,250 @@ You will edit this file:
 
 ##### Getting Started
 
-TODO: Add tutorial for running the game locally and adding your first if
-statement.
+Adventure Quest is initially set to run in `SINGLE_ADVENTURE_MODE` with The
+Dragon's Lair adventure set to run. You will first need to update the
+[config.ts](project/src/config/config.ts) file to specify that it should run
+Flaming Goat when it starts.
+
+To do this, modify the `Config.getAdventure` method.
+
+Original Code:
+```typescript
+    public getAdventure(): ITextAdventure {
+        //TODO: 
+        // Comment the line below then...
+        return new DragonsLairAdventure();
+        // Uncomment the line beneath this to run the FlamingGoatAdventure
+        //return new FlamingGoatAdventure();
+    }
+```
+
+Updated Code:
+```typescript
+    public getAdventure(): ITextAdventure {
+        //TODO: 
+        // Comment the line below then...
+        // return new DragonsLairAdventure();
+        // Uncomment the line beneath this to run the FlamingGoatAdventure
+        return new FlamingGoatAdventure();
+    }
+```
+
+Make sure to save your changes. Then, you need to make sure your project is
+running. If you're not sure how to do this, see [Running the
+Project](#running-the-project).
+
+If all goes well, you should visit [localhost:4200](http://localhost:4200) in
+your web browser and see the following screen:
+
+![Flaming Goat Intro](support/flaming-goat-intro.png)
+
+##### My first if statement
+
+Currently, within the Flaming Goat adventure, you will never be able to leave
+the Subway platform. All inputs entered are simply ignored and the room
+description will be printed to the screen.
+
+To have the adventure respond to user inputs, you must update the
+[SubwayPlatform.handleInput](project/src/adventure/FlamingGoat/rooms/SubwayPlatform.ts)
+method.
+
+Update the code to give a response if the user types `escalator`:
+
+Original Code:
+```typescript
+    async handleInput(adventure: ITextAdventure): Promise<IRoom> {
+        const fga: FlamingGoatAdventure = adventure as FlamingGoatAdventure;
+        const input: string = (await fga.getInput()).toLowerCase().trim();
+        //TODO
+        return this;
+    }
+```
+
+Updated Code:
+```typescript
+    async handleInput(adventure: ITextAdventure): Promise<IRoom> {
+        const fga: FlamingGoatAdventure = adventure as FlamingGoatAdventure;
+        const input: string = (await fga.getInput()).toLowerCase().trim();
+        //TODO
+        if (input === "escalator") {
+            fga.print("\nIt's broken. You'll have to [walk] up it.\n");
+        }
+        return this;
+    }
+```
+
+If your Angular server is still running in your VS Code Terminal, after you save
+you should see output of it compiling. If all went well, you will see the
+following:
+
+![Angular Build Success](support/angular-build-successful.png)
+
+In your web browser, the adventure should have restarted. If you closed the tab,
+you can find it again at [localhost:4200](http://localhost:4200/). 
+
+Test out the `escalator` input. If all went well, you should see the message you
+added. **Note**: `\n` is a special instruction which tells the terminal to
+create a new line. 
+
+##### Breaking down an if statement
+
+You've written your first if statement. Now, let's break down its components.
+
+```typescript
+if ( <conditional-expression> ){
+    <body>
+}
+```
+
+Every if statement is constructed the following way:
+
+1. The keyword `if`
+2. A `conditional-expression`
+3. A body which executes if the `conditional-expression` evaluates to `true`.
+
+##### My First else if statement
+
+Next, we will add in the code which will execute when a player enters `walk`. To
+do this, we will use an `else if` statement.
+
+Original Code:
+```typescript
+    async handleInput(adventure: ITextAdventure): Promise<IRoom> {
+        const fga: FlamingGoatAdventure = adventure as FlamingGoatAdventure;
+        const input: string = (await fga.getInput()).toLowerCase().trim();
+        //TODO
+        if (input === "escalator") {
+            fga.print("\nIt's broken. You'll have to [walk] up it.\n");
+        }
+        return this;
+    }
+```
+
+Updated Code:
+```typescript
+    async handleInput(adventure: ITextAdventure): Promise<IRoom> {
+        if (input === "escalator") {
+            fga.print("\nIt's broken. You'll have to [walk] up it.\n");
+        } else if (input === "walk") {
+            fga.print("\nYou start to walk up the escalator.\n");
+            // Change to the Escalator room
+            return new Escalator();
+        } 
+        return this;
+    }
+```
+
+After you save your code and the Angular project has built. Test the `walk`
+command for your adventure.
+
+If all went well, your player will now be in the Escalator room. We will talk
+more about what `return` does in future projects. For now, it is important to
+know that this is the procedure for changing rooms within the Adventure Quest
+Engine.
+
+##### Breaking down an else if statement
+
+You've written your first else if statement. Now, let's break down its
+components.
+
+```typescript
+<if-statement | else-if-statement>
+else <if-statement>
+```
+
+Every if statement is constructed the following way:
+
+1. An entire `if` or `else if` statement precedes an `else if`
+2. The keyword `else`
+3. An `if` statement
+
+When an `if` statement's conditional is `false`, it will jump to the end of its
+body. If the `else if` keywords are present, the `conditional` of that `if` is
+then checked. This proceeds until there are no `else` keywords remaining.
+
+##### My first else statement
+
+When the user enters a command that is not valid, we need to inform them that
+the command is not valid. To do this, we will add an `else` statement to our
+code.
+
+Original Code:
+```typescript
+    async handleInput(adventure: ITextAdventure): Promise<IRoom> {
+        if (input === "escalator") {
+            fga.print("\nIt's broken. You'll have to [walk] up it.\n");
+        } else if (input === "walk") {
+            fga.print("\nYou start to walk up the escalator.\n");
+            // Change to the Escalator room
+            return new Escalator();
+        } 
+        return this;
+    }
+```
+
+Updated Code:
+```typescript
+    async handleInput(adventure: ITextAdventure): Promise<IRoom> {
+        if (input === "escalator") {
+            fga.print("\nIt's broken. You'll have to [walk] up it.\n");
+        } else if (input === "walk") {
+            fga.print("\nYou start to walk up the escalator.\n");
+            // Change to the Escalator room
+            return new Escalator();
+        } else {
+            fga.print("\nInvalid command!");
+        }
+        return this;
+    }
+```
+
+After you save your code and the Angular project has built. Test your code by
+entering a command other than `escalator` or `walk` command for your adventure.
+
+If all went well, you should see the message `Invalid command!`.
+
+##### Breaking down an else statement
+
+You've written your first else statement. Now, let's break down its components.
+
+```typescript
+<if-statement | else-if-statement>
+else {
+    <body>
+}
+```
+
+Every if statement is constructed the following way:
+
+1. An entire `if` or `else if` statement precedes an `else`
+2. The keyword `else`
+3. A body of code to execute if all previous `if` `conditinal-expresion`s are
+   `false`.
+
+An `else` statement acts as a catch-all section of code to execute when all of
+the previous `conditional-expression`s evaluate to `false`. 
+
+##### Finishing the Subway Platform Room
+
+Now it is your turn to complete the Subway Platform Room. A full flowchart for
+this room can be found in the Flaming Goat adventure design document:
+[FlamingGoat/README.md](FlamingGoat/README.md)
+
+Don't forget to add your completed code to the Design Document when you have
+completed the adventure.
 
 #### Implement the Escalator Room
 
-The Escalator Room is also defined on the [design
+The Escalator Room is also defined in the [design
 document](FlamingGoat/README.md). Use the flowchart to complete the Escalator
 Room.
 
 You will edit this file:
 [project/src/adventure/FlamingGoat/rooms/Escalator.ts](project/src/adventure/FlamingGoat/rooms/Escalator.ts)
 
+Don't forget to add your completed code to the Design Document when you have
+completed the adventure.
 
 ### Milestone 2 Deliverables
 
@@ -302,6 +534,8 @@ it is available online.
 
 * **E Period** - Monday, October 4th @ 11:59PM
 * **C Period** - Tuesday, October 5th @ 11:59PM
+
+For this milestone, you will create a design document for your own text adventure.
 
 ### Design Document
 
