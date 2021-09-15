@@ -6,18 +6,17 @@ import { Escalator } from "./Escalator";
 
 export class SubwayPlatform implements IRoom {
     getName(adventure: ITextAdventure): string {
-        //TODO:
-        return "TODO: Name";
+        return "Subway Platform";
     }
     getDescription(adventure: ITextAdventure): string {
-        //TODO:
-        return `TODO: Description`;
+        return `You are standing on the subway platform. There is a broken [escalator] here
+and a vending [machine].`;
     }
 
     async handleInput(adventure: ITextAdventure): Promise<IRoom> {
         const fga: FlamingGoatAdventure = adventure as FlamingGoatAdventure;
         const input: string = (await fga.getInput()).toLowerCase().trim();
-        //TODO: Implement the games logic
+        //TODO
         return this;
     }
 
