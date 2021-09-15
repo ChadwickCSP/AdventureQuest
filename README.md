@@ -3,10 +3,10 @@
 A text based adventure engine.
 
 * [Overview](#overview)
+* [The Dragon's Lair](#the-dragons-lair)
 * [Getting Started](#getting-started)
     * [Sign up for the Project](#sign-up-for-the-project)
     * [Clone your Repository](#clone-your-repository)
-    * [Play the Dragon's Lair](#play-the-dragons-lair)
     * [Setting up the Project](#setting-up-the-project)
         * [Installing Node Version Manager](#installing-node-version-manager)
         * [Initializing the Project](#initializing-the-project)
@@ -37,6 +37,30 @@ A text based adventure engine.
 You will design a text based adventure game and implement it in the Adventure
 Quest Game Engine where it can be played by anyone in the world!
 
+## The Dragon's Lair
+
+The Dragon's Lair is a text adventure created by Mx. Collard to demonstrate the
+Adventure Quest Game Engine's API (Application Programming Interface). The API
+defines a protocol that if followed, allows for a text adventure to be created
+by defining the rooms that comprise the adventure. For the first Milestone of 
+this project, you will study the code of this text adventure.
+
+Play The Dragon's Lair:
+[LINK](https://chadwickcsp.github.io/AdventureQuest/DragonsLair/)
+
+Source Code:
+
+* [project/src/adventure/DragonsLair/](project/src/adventure/DragonsLair/)
+    * [DragonsLair.ts](project/src/adventure/DragonsLair/DragonsLair.ts)
+    * [rooms/](project/src/adventure/DragonsLair/rooms/)
+        * [CaveEntrance.ts](project/src/adventure/DragonsLair/rooms/CaveEntrance.ts)
+        * [DeadEnd.ts](project/src/adventure/DragonsLair/rooms/DeadEnd.ts)
+        * [Gym.ts](project/src/adventure/DragonsLair/rooms/Gym.ts)
+        * [Lair.ts](project/src/adventure/DragonsLair/rooms/Lair.ts)
+        * [MouthOfCave.ts](project/src/adventure/DragonsLair/rooms/MouthOfCave.ts)
+        * [Snoring.ts](project/src/adventure/DragonsLair/rooms/Snoring.ts)
+        * [Tunnel.ts](project/src/adventure/DragonsLair/rooms/Tunnel.ts)
+
 ## Getting Started
 
 ### Sign up for the project
@@ -45,7 +69,7 @@ Sign up for the project here: TODO
 
 ### Clone your repository
 
-After you have signed up for the project, you can clone it using Github Desktop.
+After you have signed up for the project, you can clone it using GitHub Desktop.
 
 
 1. Click the Current Repository drop down
@@ -65,14 +89,6 @@ After you have signed up for the project, you can clone it using Github Desktop.
    displayed.
 
 5. Open the project in `Visual Studio Code`
-
-### Play the Dragon's Lair
-
-The Dragon's Lair is a text adventure created by Mx. Collard to demonstrate the
-Adventure Quest Game Engine's API (Application Programming Interface).
-
-TODO
-
 
 ### Setting up the project
 
@@ -147,7 +163,7 @@ and running it locally on your computer.
       be in the `project` folder
 7. Run the command `nvm install 16.9.1`
     * This command will download a program called Node which is used to run
-      javascript
+      JavaScript
 8. Run the command `nvm use 16.9.1`
     * This command tells your terminal to use this version of Node
 9. Run the command `npm install`
@@ -218,7 +234,7 @@ will create a tag called `milestone-1`. If you later decide you would like to
 change the commit for `milestone-1` you may create additional tags with a
 version number. For example, `milestone-1-v2` or `milestone-1-v3`. For final
 grading, the `milestone-1` tag with the greatest version number will be used.
-After creating your tag, don't forget to push it to Github and verify it is
+After creating your tag, don't forget to push it to GitHub and verify it is
 available online.
 
 ## Milestone 2
@@ -416,7 +432,7 @@ access to a variable, the variable is said to be `out of scope`.
 
 A decision block describes a branching path in a flow chart that is based on a
 yes or no condition. A decision must have at least one (but may have more)
-incomming arrow and must contain exactly two outgoing arrows: one for the yes
+incoming arrow and must contain exactly two outgoing arrows: one for the yes
 condition and one for the no condition.
 
 ### Connector
@@ -489,7 +505,7 @@ exactly 5 cards.
 ## Appendix C: README.md
 
 It is a relatively standard protocol to have README.md files at the base
-directory of important folders. On Github (and other sites), when you navigate
+directory of important folders. On GitHub (and other sites), when you navigate
 to a folder, if a README.md file is present, it is displayed as a website to the
 user. In fact, the instructions for this project are contained in the README.md
 file in the root of this project. In Visual Studio Code, you can actually view a
@@ -503,8 +519,8 @@ help you catch any formatting errors you might have.
 
 ### Headers
 
-In Markdown, headers are denoted using one or more octothorps (`#`) followed by
-the text you would like for the header. The more octothorps you use, the smaller
+In Markdown, headers are denoted using one or more octothorpes (`#`) followed by
+the text you would like for the header. The more octothorpes you use, the smaller
 the header will be. For example:
 
 ```
