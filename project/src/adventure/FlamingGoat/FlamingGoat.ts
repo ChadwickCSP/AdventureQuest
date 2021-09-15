@@ -33,7 +33,8 @@ export class FlamingGoatAdventure extends AbstractTextAdventure {
         this.sleep(0.5);
         this.print("The doors open and you step out onto an empty platform.\n\n");
         this.sleep(0.5);
-
+        this.print("Press Enter to Continue...");
+        await this.getInput();
         return new SubwayPlatform();
     }
 }
