@@ -270,7 +270,8 @@ You will edit this file:
 
 ##### Getting Started
 
-TODO: Add tutorial for running the game locally and adding your first if statement.
+TODO: Add tutorial for running the game locally and adding your first if
+statement.
 
 #### Implement the Escalator Room
 
