@@ -535,20 +535,63 @@ it is available online.
 * **E Period** - Monday, October 4th @ 11:59PM
 * **C Period** - Tuesday, October 5th @ 11:59PM
 
-For this milestone, you will create a design document for your own text adventure.
+For this milestone, you will create a design document for your own text
+adventure. 
 
 ### Design Document
 
+Create a new folder for your adventure. Create a README.md in that folder. This
+will be your design document.
+
+Your design document should include the following:
+
+* A high level description of your adventure
+* A map of your adventure describing what needs to be done in each room
+* A list of variables necessary for your adventure
+    * For advanced, you should include 5 variables
+* A description of each Room in your adventure
+    * For advanced, you need at least 10 rooms
+* A flowchart for 2 of your rooms
+    * You should try to select your 2 most complex rooms and create a flowchart
+      describing the room
+
 ### Milestone 3 Deliverables
+
+To submit Milestone 3, you should complete a design document for your text adventure. This should be a README.md file
+within a new folder named after your adventure.
+
+When you have finished your design document, you should commit and push
+your work. Then, you will create a tag called `milestone-3`. If you later decide
+you would like to change the commit for `milestone-3` you may create additional
+tags with a version number. For example, `milestone-3-v2` or `milestone-3-v3`.
+For final grading, the `milestone-3` tag with the greatest version number will
+be used. After creating your tag, don't forget to push it to GitHub and verify
+it is available online.
 
 ## Milestone 4
 
 * **E Period** - Monday, October 11th @ 11:59PM
 * **C Period** - Tuesday, October 12th @ 11:59PM
 
+For this milestone, you will implement your text adventure.
+
 ### Create a Text Adventure
 
-### Milestone 3 Deliverables
+Study the code from the Dragons Lair and Flaming Goat adventures to create your
+own Text Adventure. Ask lots of questions, post on piazza, and have fun!
+
+### Milestone 4 Deliverables
+
+To submit Milestone 4, you should complete your text adventure. This should be placed
+within the [project/src/adventure/](project/src/adventure/) folder.
+
+When you have finished your implementation, you should commit and push
+your work. Then, you will create a tag called `milestone-4`. If you later decide
+you would like to change the commit for `milestone-4` you may create additional
+tags with a version number. For example, `milestone-4-v2` or `milestone-4-v3`.
+For final grading, the `milestone-4` tag with the greatest version number will
+be used. After creating your tag, don't forget to push it to GitHub and verify
+it is available online.
 
 ## Grading
 
