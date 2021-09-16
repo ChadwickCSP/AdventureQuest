@@ -20,11 +20,13 @@ A text based adventure engine.
         - [Angular](#angular)
         - [Creating a Server](#creating-a-server)
   - [Milestone 1](#milestone-1)
+    - [Task List](#task-list)
     - [Flow Charts](#flow-charts)
       - [Completed Rooms](#completed-rooms)
       - [Rooms to Complete](#rooms-to-complete)
     - [Milestone 1 Deliverables](#milestone-1-deliverables)
   - [Milestone 2](#milestone-2)
+    - [Task List](#task-list-1)
     - [Flaming Goat Adventure](#flaming-goat-adventure)
       - [Implement the Subway Platform Room](#implement-the-subway-platform-room)
         - [Getting Started](#getting-started-1)
@@ -38,9 +40,11 @@ A text based adventure engine.
       - [Implement the Escalator Room](#implement-the-escalator-room)
     - [Milestone 2 Deliverables](#milestone-2-deliverables)
   - [Milestone 3](#milestone-3)
+    - [Task List](#task-list-2)
     - [Design Document](#design-document)
     - [Milestone 3 Deliverables](#milestone-3-deliverables)
   - [Milestone 4](#milestone-4)
+    - [Task List](#task-list-3)
     - [Create a Text Adventure](#create-a-text-adventure)
     - [Milestone 4 Deliverables](#milestone-4-deliverables)
   - [Grading](#grading)
@@ -72,6 +76,147 @@ A text based adventure engine.
     - [Code Boxes](#code-boxes)
     - [Images](#images)
         Room](#implement-the-subway-platform-room)
+        - [Getting Started](#getting-started-1)
+        - [My first if statement](#my-first-if-statement)
+        - [Breaking down an if statement](#breaking-down-an-if-statement)
+        - [My First else if statement](#my-first-else-if-statement)
+        - [Breaking down an else if
+          statement](#breaking-down-an-else-if-statement)
+        - [My first else statement](#my-first-else-statement)
+        - [Breaking down an else statement](#breaking-down-an-else-statement)
+        - [Finishing the Subway Platform
+          Room](#finishing-the-subway-platform-room)
+      - [Implement the Escalator Room](#implement-the-escalator-room)
+    - [Milestone 2 Deliverables](#milestone-2-deliverables)
+  - [Milestone 3](#milestone-3)
+    - [Design Document](#design-document)
+    - [Milestone 3 Deliverables](#milestone-3-deliverables)
+  - [Milestone 4](#milestone-4)
+    - [Create a Text Adventure](#create-a-text-adventure)
+    - [Milestone 4 Deliverables](#milestone-4-deliverables)
+  - [Grading](#grading)
+    - [Computational Thinking](#computational-thinking)
+    - [Computing, Programming, and
+      Practice](#computing-programming-and-practice)
+    - [Skills of a Programmer](#skills-of-a-programmer)
+  - [Getting Help](#getting-help)
+  - [Appendix A: Flow Chart Components](#appendix-a-flow-chart-components)
+    - [Entry Point](#entry-point)
+    - [Procedure](#procedure)
+      - [Calling a Procedure](#calling-a-procedure)
+    - [Process](#process)
+    - [Display](#display)
+    - [User Input](#user-input)
+    - [Data](#data)
+      - [Accessing Data](#accessing-data)
+    - [Decision](#decision)
+    - [Connector](#connector)
+    - [Terminal](#terminal)
+  - [Appendix B: Keywords](#appendix-b-keywords)
+    - [Sequence](#sequence)
+    - [Selection](#selection)
+    - [Iteration](#iteration)
+  - [Appendix C: README.md](#appendix-c-readmemd)
+    - [Headers](#headers)
+- [Header 1](#header-1)
+  - [Header 2](#header-2)
+    - [Header 3](#header-3)
+    - [Code Boxes](#code-boxes)
+    - [Images](#images) Room](#implement-the-subway-platform-room)
+        - [Getting Started](#getting-started-1)
+        - [My first if statement](#my-first-if-statement)
+        - [Breaking down an if statement](#breaking-down-an-if-statement)
+        - [My First else if statement](#my-first-else-if-statement)
+        - [Breaking down an else if
+          statement](#breaking-down-an-else-if-statement)
+        - [My first else statement](#my-first-else-statement)
+        - [Breaking down an else statement](#breaking-down-an-else-statement)
+        - [Finishing the Subway Platform
+          Room](#finishing-the-subway-platform-room)
+      - [Implement the Escalator Room](#implement-the-escalator-room)
+    - [Milestone 2 Deliverables](#milestone-2-deliverables)
+  - [Milestone 3](#milestone-3)
+    - [Design Document](#design-document)
+    - [Milestone 3 Deliverables](#milestone-3-deliverables)
+  - [Milestone 4](#milestone-4)
+    - [Create a Text Adventure](#create-a-text-adventure)
+    - [Milestone 4 Deliverables](#milestone-4-deliverables)
+  - [Grading](#grading)
+    - [Computational Thinking](#computational-thinking)
+    - [Computing, Programming, and
+      Practice](#computing-programming-and-practice)
+    - [Skills of a Programmer](#skills-of-a-programmer)
+  - [Getting Help](#getting-help)
+  - [Appendix A: Flow Chart Components](#appendix-a-flow-chart-components)
+    - [Entry Point](#entry-point)
+    - [Procedure](#procedure)
+      - [Calling a Procedure](#calling-a-procedure)
+    - [Process](#process)
+    - [Display](#display)
+    - [User Input](#user-input)
+    - [Data](#data)
+      - [Accessing Data](#accessing-data)
+    - [Decision](#decision)
+    - [Connector](#connector)
+    - [Terminal](#terminal)
+  - [Appendix B: Keywords](#appendix-b-keywords)
+    - [Sequence](#sequence)
+    - [Selection](#selection)
+    - [Iteration](#iteration)
+  - [Appendix C: README.md](#appendix-c-readmemd)
+    - [Headers](#headers)
+- [Header 1](#header-1)
+  - [Header 2](#header-2)
+    - [Header 3](#header-3)
+    - [Code Boxes](#code-boxes)
+    - [Images](#images) Room](#implement-the-subway-platform-room)
+        - [Getting Started](#getting-started-1)
+        - [My first if statement](#my-first-if-statement)
+        - [Breaking down an if statement](#breaking-down-an-if-statement)
+        - [My First else if statement](#my-first-else-if-statement)
+        - [Breaking down an else if
+          statement](#breaking-down-an-else-if-statement)
+        - [My first else statement](#my-first-else-statement)
+        - [Breaking down an else statement](#breaking-down-an-else-statement)
+        - [Finishing the Subway Platform
+          Room](#finishing-the-subway-platform-room)
+      - [Implement the Escalator Room](#implement-the-escalator-room)
+    - [Milestone 2 Deliverables](#milestone-2-deliverables)
+  - [Milestone 3](#milestone-3)
+    - [Design Document](#design-document)
+    - [Milestone 3 Deliverables](#milestone-3-deliverables)
+  - [Milestone 4](#milestone-4)
+    - [Create a Text Adventure](#create-a-text-adventure)
+    - [Milestone 4 Deliverables](#milestone-4-deliverables)
+  - [Grading](#grading)
+    - [Computational Thinking](#computational-thinking)
+    - [Computing, Programming, and
+      Practice](#computing-programming-and-practice)
+    - [Skills of a Programmer](#skills-of-a-programmer)
+  - [Getting Help](#getting-help)
+  - [Appendix A: Flow Chart Components](#appendix-a-flow-chart-components)
+    - [Entry Point](#entry-point)
+    - [Procedure](#procedure)
+      - [Calling a Procedure](#calling-a-procedure)
+    - [Process](#process)
+    - [Display](#display)
+    - [User Input](#user-input)
+    - [Data](#data)
+      - [Accessing Data](#accessing-data)
+    - [Decision](#decision)
+    - [Connector](#connector)
+    - [Terminal](#terminal)
+  - [Appendix B: Keywords](#appendix-b-keywords)
+    - [Sequence](#sequence)
+    - [Selection](#selection)
+    - [Iteration](#iteration)
+  - [Appendix C: README.md](#appendix-c-readmemd)
+    - [Headers](#headers)
+- [Header 1](#header-1)
+  - [Header 2](#header-2)
+    - [Header 3](#header-3)
+    - [Code Boxes](#code-boxes)
+    - [Images](#images) Room](#implement-the-subway-platform-room)
         - [Getting Started](#getting-started-1)
         - [My first if statement](#my-first-if-statement)
         - [Breaking down an if statement](#breaking-down-an-if-statement)
@@ -290,7 +435,26 @@ To create a server to run the project:
 * **C Period** - Thursday, September 23rd @ 11:59PM
 
 For this milestone, you will study the source code of [The Dragon's
-Lair](#the-dragons-lair) adventure.
+Lair](#the-dragons-lair) adventure. 
+
+For this milestone, you may work in groups of 2 or 3. However, each person is
+responsible for producing flowcharts in their own project repository.
+
+### Task List
+
+- [ ] Play The Dragon's Lair
+- [ ] Review the Dragon's Lair design document
+- [ ] Complete flowchart for Dead End
+- [ ] Add flowchart to README.md
+- [ ] Complete flowchart for Gym
+- [ ] Add flowchart to README.md
+- [ ] Complete flowchart for Mouth of Cave
+- [ ] Add flowchart to README.md
+- [ ] Complete flowchart for Snoring
+- [ ] Add flowchart to README.md
+- [ ] Commit Work (you should do this each time you finish working)
+- [ ] Add `milestone-1` tag
+- [ ] Push Work (you should do this each time you finish working)
 
 ### Flow Charts
 
@@ -299,7 +463,14 @@ the code for each of these rooms and translate their `handleInput` methods into
 procedure flowcharts. 3 of the rooms have been complete for you. As you complete
 each room, you should add its code and flowchart to the README.md file in the
 `DragonsLair` folder. For more information on procedure flowcharts, see
-[Appendix C: Procedure](#procedure)
+[Appendix A: Procedure](#procedure)
+
+**Note**: You should use the correct shapes as defined in [Appendix
+A](#appendix-a-flow-chart-components). This is part of the [Computing,
+Programming, and Practice](#computing-programming-and-practice) rubric. I
+recommend using [Pencil](https://pencil.evolus.vn/) for creating your flow
+charts. If you would like to use Mx. Collard's Shape library, you can download
+it: [LINK](support/Computer%20Science%20Flowcharts.zip)
 
 #### Completed Rooms
 1. [Cave Entrance](project/src/adventure/DragonsLair/rooms/CaveEntrance.ts)
@@ -335,6 +506,23 @@ available online.
 
 For this milestone, you will finish the implementation of a short 2 room
 adventure.
+
+For this milestone, you may work in groups of 2 or 3. However, each person is
+responsible for producing a working version of the Flaming Goat in their
+repository.
+
+### Task List
+
+- [ ] Play The Flaming Goat Adventure
+- [ ] Review the Flaming Goat design document
+- [ ] Follow the Subway Platform Tutorial
+- [ ] Complete the Subway Platform
+- [ ] Add the Subway Platform code to README.md
+- [ ] Complete the Escalator
+- [ ] Add the Escalator code to the README.md
+- [ ] Commit Work (you should do this each time you finish working)
+- [ ] Add `milestone-2` tag
+- [ ] Push Work (you should do this each time you finish working)
 
 ### Flaming Goat Adventure
 
@@ -624,7 +812,30 @@ it is available online.
 * **C Period** - Tuesday, October 5th @ 11:59PM
 
 For this milestone, you will create a design document for your own text
-adventure. 
+adventure.
+
+You must complete this milestone individually. You may however talk to your
+peers about their projects as well as give and receive help.
+
+### Task List
+
+- [ ] Create a folder for your adventure
+- [ ] Create a README.md file for your design document
+- [ ] Create a Variables section 
+  - [ ] List your variables (5 or more for advanced)
+- [ ] Create a Map section
+  - [ ] Add an image of your Map
+- [ ] Create a Room section
+- [ ] Add a section for each room (10 or more for advanced)
+  - [ ] Add a description of the room
+  - [ ] Add a Valid Commands section
+  - [ ] Add a handleInput method section with an empty code block
+- [ ] Select the first 3 rooms in your adventure
+  - [ ] Create a flowchart
+  - [ ] Add an image of your flowchart
+- [ ] Commit your work (you should do this each time you finish working)
+- [ ] Tag `milestone-3`
+- [ ] Push (you should do this each time you finish working)
 
 ### Design Document
 
@@ -639,9 +850,8 @@ Your design document should include the following:
     * For advanced, you should include 5 variables
 * A description of each Room in your adventure
     * For advanced, you need at least 10 rooms
-* A flowchart for 2 of your rooms
-    * You should try to select your 2 most complex rooms and create a flowchart
-      describing the room
+* A flowchart for at least 3 of your rooms
+    * You should try to select your first 3 rooms and create a flowchart for each one.
 
 ### Milestone 3 Deliverables
 
@@ -663,6 +873,25 @@ is available online.
 * **C Period** - Tuesday, October 12th @ 11:59PM
 
 For this milestone, you will implement your text adventure.
+
+You must complete this milestone individually. You may however talk to your
+peers about their projects as well as give and receive help.
+
+### Task List
+
+- [ ] Create a folder in [project/src/adventure/](project/src/adventure/) for your adventure
+- [ ] Create a folder named `rooms` in your adventure folder
+- [ ] Study the [FlamingGoat](project/src/adventure/FlamingGoat/s) and [DragonsLair](project/src/adventure/DragonsLair/) adventures to understand how to add your adventure.
+- [ ] Update the [config.ts](project/src/config/config.ts) file to launch your adventure
+- [ ] Complete each of your rooms
+  - [ ] If necessary, create a flowchart to help debug
+  - [ ] If necessary, post on piazza
+  - [ ] If necessary, ask for help
+- [ ] Have fun!
+- [ ] Commit work often
+- [ ] Push work after committing
+- [ ] Tag `milestone-4`
+- [ ] Push tag
 
 ### Create a Text Adventure
 
