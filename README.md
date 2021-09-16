@@ -71,6 +71,54 @@ A text based adventure engine.
     - [Header 3](#header-3)
     - [Code Boxes](#code-boxes)
     - [Images](#images)
+        Room](#implement-the-subway-platform-room)
+        - [Getting Started](#getting-started-1)
+        - [My first if statement](#my-first-if-statement)
+        - [Breaking down an if statement](#breaking-down-an-if-statement)
+        - [My First else if statement](#my-first-else-if-statement)
+        - [Breaking down an else if
+          statement](#breaking-down-an-else-if-statement)
+        - [My first else statement](#my-first-else-statement)
+        - [Breaking down an else statement](#breaking-down-an-else-statement)
+        - [Finishing the Subway Platform
+          Room](#finishing-the-subway-platform-room)
+      - [Implement the Escalator Room](#implement-the-escalator-room)
+    - [Milestone 2 Deliverables](#milestone-2-deliverables)
+  - [Milestone 3](#milestone-3)
+    - [Design Document](#design-document)
+    - [Milestone 3 Deliverables](#milestone-3-deliverables)
+  - [Milestone 4](#milestone-4)
+    - [Create a Text Adventure](#create-a-text-adventure)
+    - [Milestone 4 Deliverables](#milestone-4-deliverables)
+  - [Grading](#grading)
+    - [Computational Thinking](#computational-thinking)
+    - [Computing, Programming, and
+      Practice](#computing-programming-and-practice)
+    - [Skills of a Programmer](#skills-of-a-programmer)
+  - [Getting Help](#getting-help)
+  - [Appendix A: Flow Chart Components](#appendix-a-flow-chart-components)
+    - [Entry Point](#entry-point)
+    - [Procedure](#procedure)
+      - [Calling a Procedure](#calling-a-procedure)
+    - [Process](#process)
+    - [Display](#display)
+    - [User Input](#user-input)
+    - [Data](#data)
+      - [Accessing Data](#accessing-data)
+    - [Decision](#decision)
+    - [Connector](#connector)
+    - [Terminal](#terminal)
+  - [Appendix B: Keywords](#appendix-b-keywords)
+    - [Sequence](#sequence)
+    - [Selection](#selection)
+    - [Iteration](#iteration)
+  - [Appendix C: README.md](#appendix-c-readmemd)
+    - [Headers](#headers)
+- [Header 1](#header-1)
+  - [Header 2](#header-2)
+    - [Header 3](#header-3)
+    - [Code Boxes](#code-boxes)
+    - [Images](#images)
 
 ## Overview
 
@@ -705,13 +753,13 @@ A procedure is drawn as a flowchart nested within a box with two vertical bars
 on either end. 
 
 When defining a procedure, it is possible to define "inputs" to the procedure.
-These are referred to as the procedure's `arguments`. The procedure's arguments
+These are referred to as the procedure's `parameters`. The procedure's parameter
 are represented by Data blocks on the outside of the procedure with outgoing
 arrows pointing to the procedures Entry point.
 
 A procedure should contain exactly one Entry point with a label defining the
-procedures name as well as an argument list defining the order in which the
-arguments are expected to be received.
+procedures name as well as an parameters list defining the order in which the
+parameters are expected to be received.
 
 Just like a normal flowchart, a procedure's flowchart must end at a Terminal.
 However, a procedure's Terminal describes the value that is returned by the
@@ -723,18 +771,33 @@ Within a flowchart, you will often want to call a previously defined procedure.
 
 ![Example Sum Procedure](support/procedure_sum_call.png)
 
-The example above calls the `sum` procedure and specifying the parameters `(5,
-7)`. This sets the argument `x` to be the value `5` and the argument `y` to be
-the value `7` during the call of the procedure. If you follow the `sum`
-procedure from above, it will perform addition on `x` and `y` storing it into a
-variable `result`. Finally, upon reaching the `Terminal` it returns the value
-stored in `result`, in this case `12`. Notice, this is denoted in our flowchart
-with the label `result` being placed on the outgoing arrow. This allows for the
-result to be used in the following block. **Note**: The label on the arrow may
-be anything; it is simply a way of denoting that the result will be used.
-Furthermore, the resulting value is only available in the block immediately
-following the call. This is why the result must be assigned in the block that
-follows. In this case, the result of the call of `sum(5,7)` is assigned to `z`.
+The example above calls the `sum` procedure and specifying the arguments
+`(5,7)`. Note: When you refer to the values being passed into a procedure, they
+are called arguments as they have a specific value. In this case, the parameter
+`x` will take on the value of the first argument `5` and the parameter `y` will
+take on the value of the second argument `7` during the call to the procedure.
+
+If you follow the `sum` procedure from above, it will perform addition on `x`
+and `y` storing it into a variable `result`. Because the procedure was called
+with the argument `5` in the first position, we substitute `5` for `x`. 
+
+Similarly, because the procedure was called with the argument `7` in the second
+position, we substitute `7` for `y`.
+
+This results in the value of `12` being stored in the `result` variable.
+
+Finally, upon reaching the `Terminal`, the procedure returns the value stored in
+`result`, in this case `12`. 
+
+Notice, this is denoted in our flowchart with the label `result` being placed on
+the outgoing arrow. This allows for the result to be used in the following
+block.
+
+**Note**: The label on the arrow may be anything; it is simply a way of denoting
+that the result will be used. Furthermore, the resulting value is only available
+in the block immediately following the call. This is why the result must be
+assigned in the block that follows. In this case, the result of the call of
+`sum(5,7)` is assigned to `z`.
 
 ### Process
 ![Process](support/process.png)
