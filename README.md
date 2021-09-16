@@ -89,6 +89,55 @@ A text based adventure engine.
       - [Implement the Escalator Room](#implement-the-escalator-room)
     - [Milestone 2 Deliverables](#milestone-2-deliverables)
   - [Milestone 3](#milestone-3)
+    - [Task List](#task-list-2)
+    - [Design Document](#design-document)
+    - [Milestone 3 Deliverables](#milestone-3-deliverables)
+  - [Milestone 4](#milestone-4)
+    - [Task List](#task-list-3)
+    - [Create a Text Adventure](#create-a-text-adventure)
+    - [Milestone 4 Deliverables](#milestone-4-deliverables)
+  - [Grading](#grading)
+    - [Computational Thinking](#computational-thinking)
+    - [Computing, Programming, and
+      Practice](#computing-programming-and-practice)
+    - [Skills of a Programmer](#skills-of-a-programmer)
+  - [Getting Help](#getting-help)
+  - [Appendix A: Flow Chart Components](#appendix-a-flow-chart-components)
+    - [Entry Point](#entry-point)
+    - [Procedure](#procedure)
+      - [Calling a Procedure](#calling-a-procedure)
+    - [Process](#process)
+    - [Display](#display)
+    - [User Input](#user-input)
+    - [Data](#data)
+      - [Accessing Data](#accessing-data)
+    - [Decision](#decision)
+    - [Connector](#connector)
+    - [Terminal](#terminal)
+  - [Appendix B: Keywords](#appendix-b-keywords)
+    - [Sequence](#sequence)
+    - [Selection](#selection)
+    - [Iteration](#iteration)
+  - [Appendix C: README.md](#appendix-c-readmemd)
+    - [Headers](#headers)
+- [Header 1](#header-1)
+  - [Header 2](#header-2)
+    - [Header 3](#header-3)
+    - [Code Boxes](#code-boxes)
+    - [Images](#images) Room](#implement-the-subway-platform-room)
+        - [Getting Started](#getting-started-1)
+        - [My first if statement](#my-first-if-statement)
+        - [Breaking down an if statement](#breaking-down-an-if-statement)
+        - [My First else if statement](#my-first-else-if-statement)
+        - [Breaking down an else if
+          statement](#breaking-down-an-else-if-statement)
+        - [My first else statement](#my-first-else-statement)
+        - [Breaking down an else statement](#breaking-down-an-else-statement)
+        - [Finishing the Subway Platform
+          Room](#finishing-the-subway-platform-room)
+      - [Implement the Escalator Room](#implement-the-escalator-room)
+    - [Milestone 2 Deliverables](#milestone-2-deliverables)
+  - [Milestone 3](#milestone-3)
     - [Design Document](#design-document)
     - [Milestone 3 Deliverables](#milestone-3-deliverables)
   - [Milestone 4](#milestone-4)
@@ -851,7 +900,8 @@ Your design document should include the following:
 * A description of each Room in your adventure
     * For advanced, you need at least 10 rooms
 * A flowchart for at least 3 of your rooms
-    * You should try to select your first 3 rooms and create a flowchart for each one.
+    * You should try to select your first 3 rooms and create a flowchart for
+      each one.
 
 ### Milestone 3 Deliverables
 
@@ -879,14 +929,20 @@ peers about their projects as well as give and receive help.
 
 ### Task List
 
-- [ ] Create a folder in [project/src/adventure/](project/src/adventure/) for your adventure
+- [ ] Create a folder in [project/src/adventure/](project/src/adventure/) for
+  your adventure
 - [ ] Create a folder named `rooms` in your adventure folder
-- [ ] Study the [FlamingGoat](project/src/adventure/FlamingGoat/s) and [DragonsLair](project/src/adventure/DragonsLair/) adventures to understand how to add your adventure.
-- [ ] Update the [config.ts](project/src/config/config.ts) file to launch your adventure
+- [ ] Study the [FlamingGoat](project/src/adventure/FlamingGoat/s) and
+  [DragonsLair](project/src/adventure/DragonsLair/) adventures to understand how
+  to add your adventure.
+- [ ] Update the [config.ts](project/src/config/config.ts) file to launch your
+  adventure
 - [ ] Complete each of your rooms
   - [ ] If necessary, create a flowchart to help debug
   - [ ] If necessary, post on piazza
   - [ ] If necessary, ask for help
+- [ ] Make sure your member variables are commented (the ones that start with
+  public)
 - [ ] Have fun!
 - [ ] Commit work often
 - [ ] Push work after committing
@@ -913,12 +969,22 @@ is available online.
 
 ## Grading
 
+For this project, you will receive two project grades. One for Milestones 1 and
+2 and another for Milestones 3 and 4. You can think of this project as two
+related projects.
+
 ### Computational Thinking
 
 In this assignment, you will demonstrate your understanding of flow charts,
 sequencing, selection, and iteration.
 
-TODO
+| Advanced                                                               | Proficient                                                                                                         | Basic                                                                                                              | Below Basic                                                                                   |
+|------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
+| Student successfully completes  all 4 flowcharts for the Dragon's Lair | Student attempts to complete all 4 of the flowcharts for the Dragon's Lair adventure and successfully completes 3. | Student attempts to complete all 4 of the flowcharts for the Dragon's Lair adventure and successfully completes 2. | Student does not successfully complete at least 2 flowcharts for the Dragon's Lair adventure. |
+| Student successfully implements the  Flaming Goat Adventure            | Student implements a version of the Flaming Goat adventure that is playable and can be won but may contain bugs.   | Student completes the Subway Platform room and attempts to complete the Flaming Goat room                          | Student does not complete the Subway Platform room                                            |
+|                                                                        |                                                                                                                    |                                                                                                                    |                                                                                               |
+| Student successfully completes 10 or more rooms in their adventure.    | Student successfully completes 8 or more rooms in their adventure.                                                 | Student successfully completes 6 or more rooms in their adventure.                                                 | Student does not successfully complete at least 6 rooms in their adventure.                   |
+| Student utilizes 5 or more variables in their adventure.               | Student successfully utilizes 3 or more variables in their adventure.                                              | Student successfully utilizes 2 or more variables in their adventure.                                              | Student does not successfully utilize at least 2 variables in their adventure.                |
 
 ### Computing, Programming, and Practice
 
@@ -928,8 +994,15 @@ your repository, write reasonable commit messages, and provide a REAME.md
 document describing how your flow diagram relates to your chosen game's
 instructions. 
 
-
-TODO
+| Advanced                                                                                          | Proficient                                                                                          | Basic                                                                          | Below Basic                                                                                                  |
+|---------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|
+| Student follows all flowchart rules from Appendix A.                                              | Student created a tag for all milestones                                                            | Student tagged some of their milestones                                        | Student did not tag any of their milestones                                                                  |
+| Code blocks use syntax highlighting for the correct programming language                          | Student's README.md files contain all necessary headers, images, and code block                     | Student creates a README.md for their own adventure.                           | Student does not create a README.md for their own adventure or their README.md is not in the correct folder. |
+| All member variables have a comment.                                                              | The majority of member variables have a comment one or two variables may be missing a comment.      | More than two member variables are missing a comment.                          | More than half the member variables are missing a comment.                                                   |
+| All methods or functions have a comment                                                           | The majority of methods or functions have a comment one or two methods may be missing a comment.    | More than two methods or functions are  missing a comment.                     | More than half the methods or functions are missing a comment.                                               |
+| All code is formatted consistently.  Hint: Use (Command + Shift + P) and  select Format Document. | The majority of the code is formatted consistently. A one or two files may be missing formatting.   | More than two files are not formatted.                                         | More than half the files are not formatted.                                                                  |
+| All variables, methods, and functions have type  annotations.                                     | The majority of variables, methods, and functions have type annotations. One or two may be missing. | More than two variables, methods, or functions have a type annotation missing. | More than half the variables, methods, or functions are missing a type annotation.                           |
+| No variables, methods, or functions use the `any` type.                                           | One or two variables, methods, or functions use the `any` type.                                     | More than two variables, methods, or functions use the `any` type.             | More than half the variables, methods, or functions use the `any` type.                                      |
 
 ### Skills of a Programmer
 
@@ -937,7 +1010,15 @@ Your skills of a programmer covers your Student Log repository, your in class
 time management, meeting deadlines, asking for help when needed, and helping
 others when able.
 
-TODO
+
+| Advanced                                                                                                                  | Proficient                                                                                                                                                | Basic                                                                                                                                   | Below Basic                                                                                         |
+|---------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
+| Manages time well in class,  stays focused on work at hand at almost all times                                            | Focuses on work in class                                                                                                                                  | Focuses at times, can get distracted                                                                                                    | Uses class time poorly, is frequently distracted                                                    |
+| Meets all deadlines, ahead of schedule by at least 4 hours.                                                               | Meets deadlines or asks for an extension at least 48 hours ahead of time.                                                                                 | Delivers close to deadline, may be late  by a day or two                                                                                | Delivers work late or not at all                                                                    |
+| Participated on Piazza by asking a question, answering a question, or creating a helpful note for other students.         | Seeks assistance when needed                                                                                                                              | Needs prompting to seek assistance                                                                                                      | Does not seek assistance or ask for help when needed                                                |
+| Almost all log entries are pushed after creating them.                                                                    | Almost all log entries provide a consistent commit timestamp relative to the date mentioned in the entry. All log entries are pushed prior to milestones. | Log entries follow the proper  sign-on and sign-off format.                                                                             | Few or no log entries follow the proper sign-on and sign-off format.                                |
+| Student creates a sign-on and sign-off log entry  every class and between each block period. Only missing 1 or 2 entries. | Student creates a sign-on and sign-off log entry  almost every class and between each block period. Only missing 1 or 2 entries.                          | Student creates a sign-on and sign-off log entry most classes and almost always between each block period. Only missing 3 or 4 entries. | Student frequently misses creating a sign-on and sign-off log entry. Missing 5 or more log entries. |
+
 
 ## Getting Help
 
