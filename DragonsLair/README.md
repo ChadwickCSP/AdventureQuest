@@ -2,7 +2,20 @@
 
 ## Variables
 
+The Dragons Lair adventure has 3 variables:
+
+* FlamingGoatAdventure.isGoatOnFire - This is a boolean which tracks if the Goat
+  is currently on fire
+* FlamingGoatAdventure.hasSpryte - This is a boolean which tracks if the player
+  has a Spryte
+
+* DragonsLair.hasKey - This is a boolean which tracks if the player has found the key
+* DragonsLair.hasSword - This is a boolean which tracks if the player has found the sword
+* DragonsLair.strength - This is a number which tracks how strong the player is
+
 ## Map
+
+![Map of Dragon's Lair](flowcharts/map.png)
 
 ## Rooms
 
@@ -57,7 +70,7 @@ key opens the chest in the tunnel.
 
 #### Flowchart
 
-TODO:
+TODO: Complete this section for Milestone 1
 
 #### handleInput method
 
@@ -109,7 +122,7 @@ increase their strength.
 
 #### Flowchart
 
-TODO
+TODO: Complete this section for Milestone 1
 
 #### handleInput method
 
@@ -222,7 +235,7 @@ This is the second room in the adventure. The cave forks in two directions.
 
 #### Flowchart
 
-TODO
+TODO: Complete this section for Milestone 1
 
 #### handleInput method
 
@@ -272,7 +285,7 @@ contains a sword. A key is required to open the chest.
 
 #### Flowchart
 
-TODO
+TODO: Complete this section for Milestone 1
 
 #### handleInput method
 
