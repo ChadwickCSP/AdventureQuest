@@ -1,5 +1,40 @@
 # The Dragon's Lair
 
+The Dragon's Lair is an adventure into a slumbering dragon's cave.
+
+- [The Dragon's Lair](#the-dragons-lair)
+  - [Variables](#variables)
+  - [Map](#map)
+  - [Rooms](#rooms)
+    - [Cave Entrance](#cave-entrance)
+      - [Valid Commands](#valid-commands)
+      - [Flowchart](#flowchart)
+      - [handleInput method](#handleinput-method)
+    - [Dead End](#dead-end)
+      - [Valid Commands](#valid-commands-1)
+      - [Flowchart](#flowchart-1)
+      - [handleInput method](#handleinput-method-1)
+    - [Ye Olde Gym](#ye-olde-gym)
+      - [Valid Commands](#valid-commands-2)
+      - [Flowchart](#flowchart-2)
+      - [handleInput method](#handleinput-method-2)
+    - [The Dragon's Lair](#the-dragons-lair-1)
+      - [Valid Commands](#valid-commands-3)
+      - [Flowchart](#flowchart-3)
+      - [handleInput method](#handleinput-method-3)
+    - [Mouth of Cave](#mouth-of-cave)
+      - [Valid Commands](#valid-commands-4)
+      - [Flowchart](#flowchart-4)
+      - [handleInput method](#handleinput-method-4)
+    - [A Large Natural Cave](#a-large-natural-cave)
+      - [Valid Commands](#valid-commands-5)
+      - [Flowchart](#flowchart-5)
+      - [handleInput method](#handleinput-method-5)
+    - [A Long Winding Tunnel](#a-long-winding-tunnel)
+      - [Valid Commands](#valid-commands-6)
+      - [Flowchart](#flowchart-6)
+      - [handleInput method](#handleinput-method-6)
+
 ## Variables
 
 The Dragons Lair adventure has 3 variables:
@@ -35,7 +70,7 @@ run home.
 
 ![Cave Entrance Flowchart](flowcharts/CaveEntrance-Flowchart.png)
 
-#### handleInput code
+#### handleInput method
 
 ```typescript
 async handleInput(adventure: ITextAdventure): Promise<IRoom> {

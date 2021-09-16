@@ -3,6 +3,19 @@
 The Flaming Goat is a text adventure in which the player must find their way out
 of the subway.
 
+- [Flaming Goat](#flaming-goat)
+  - [Variables](#variables)
+  - [Map](#map)
+  - [Rooms](#rooms)
+    - [SubwayPlatform](#subwayplatform)
+      - [Valid Commands](#valid-commands)
+      - [Flowchart](#flowchart)
+      - [handleInput method](#handleinput-method)
+    - [Escalator](#escalator)
+      - [Valid Commands](#valid-commands-1)
+      - [Flowchart](#flowchart-1)
+      - [handleInput method](#handleinput-method-1)
+
 ## Variables
 
 The Flaming Goat adventure has 2 variables:
@@ -37,7 +50,7 @@ to get a Spryte. This is controlled using the `hasSpryte` variable.
 
 ![Subway Platform Flowchart](flowcharts/SubwayPlatform-flowchart.png)
 
-#### handleInput code
+#### handleInput method
 
 ```typescript
 //TODO: Complete code block
@@ -65,7 +78,7 @@ subway.
 ![Escalator Flowchart](flowcharts/Escalator-flowchart.png)
 
 
-#### handleInput code
+#### handleInput method
 
 ```typescript
 //TODO: Complete code block
