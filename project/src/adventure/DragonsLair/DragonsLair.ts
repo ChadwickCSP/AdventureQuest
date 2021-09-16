@@ -9,8 +9,14 @@ import { CaveEntrance } from "./rooms/CaveEntrance";
 export class DragonsLairAdventure extends AbstractTextAdventure {
 
     // At the top, declare all of the variables for your game.
+
+    // This determines if the player has the key
     public hasKey: boolean = false;
+
+    // This determines if the player has the sword
     public hasSword: boolean = false;
+
+    // This determines the players strength
     public strength: number = 0;
 
     // Specify the name that will appear on the adventure select menu

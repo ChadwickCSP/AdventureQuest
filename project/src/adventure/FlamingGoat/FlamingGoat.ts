@@ -4,7 +4,10 @@ import { SubwayPlatform } from "./rooms/SubwayPlatform";
 
 export class FlamingGoatAdventure extends AbstractTextAdventure {
 
+    // This determines if the goat is currently on fire
     public isGoatOnFire: boolean = true;
+
+    // This determines if the player has a Spryte
     public hasSpryte: boolean = false;
 
     getName(): string {
