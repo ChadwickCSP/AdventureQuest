@@ -75,6 +75,56 @@ A text based adventure engine.
     - [Header 3](#header-3)
     - [Code Boxes](#code-boxes)
     - [Images](#images)
+        Room](#implement-the-subway-platform-room)
+        - [Getting Started](#getting-started-1)
+        - [My first if statement](#my-first-if-statement)
+        - [Breaking down an if statement](#breaking-down-an-if-statement)
+        - [My First else if statement](#my-first-else-if-statement)
+        - [Breaking down an else if
+          statement](#breaking-down-an-else-if-statement)
+        - [My first else statement](#my-first-else-statement)
+        - [Breaking down an else statement](#breaking-down-an-else-statement)
+        - [Finishing the Subway Platform
+          Room](#finishing-the-subway-platform-room)
+      - [Implement the Escalator Room](#implement-the-escalator-room)
+    - [Milestone 2 Deliverables](#milestone-2-deliverables)
+  - [Milestone 3](#milestone-3)
+    - [Task List](#task-list-2)
+    - [Design Document](#design-document)
+    - [Milestone 3 Deliverables](#milestone-3-deliverables)
+  - [Milestone 4](#milestone-4)
+    - [Task List](#task-list-3)
+    - [Create a Text Adventure](#create-a-text-adventure)
+    - [Milestone 4 Deliverables](#milestone-4-deliverables)
+  - [Grading](#grading)
+    - [Computational Thinking](#computational-thinking)
+    - [Computing, Programming, and
+      Practice](#computing-programming-and-practice)
+    - [Skills of a Programmer](#skills-of-a-programmer)
+  - [Getting Help](#getting-help)
+  - [Appendix A: Flow Chart Components](#appendix-a-flow-chart-components)
+    - [Entry Point](#entry-point)
+    - [Procedure](#procedure)
+      - [Calling a Procedure](#calling-a-procedure)
+    - [Process](#process)
+    - [Display](#display)
+    - [User Input](#user-input)
+    - [Data](#data)
+      - [Accessing Data](#accessing-data)
+    - [Decision](#decision)
+    - [Connector](#connector)
+    - [Terminal](#terminal)
+  - [Appendix B: Keywords](#appendix-b-keywords)
+    - [Sequence](#sequence)
+    - [Selection](#selection)
+    - [Iteration](#iteration)
+  - [Appendix C: README.md](#appendix-c-readmemd)
+    - [Headers](#headers)
+- [Header 1](#header-1)
+  - [Header 2](#header-2)
+    - [Header 3](#header-3)
+    - [Code Boxes](#code-boxes)
+    - [Images](#images)
 
 ## Overview
 
@@ -155,12 +205,21 @@ To install Homebrew:
 3. Follow the on screen instruction. When you're prompted for a password, type
    the password you use to log into your computer. Installation may take some
    time.
+4. After the installation is complete, you will likely see a message saying
+   there are 2 more commands you must run. Copy and paste those commands into
+   your terminal one at a time.
 
 After Homebrew is installed, you can install Node Version Manager by running the
 following commands:
 
 1. `brew update`
 2. `brew install nvm`
+3. Download [install-nvm.command.zip](support/install-nvm.command.zip)
+4. Unzip the file
+5. In your terminal type `bash` (don't press enter) 
+6. Drag and drop the `install-nvm.command` file into the terminal
+7. Press enter
+8. Close your terminal window, and open a new one
 
 To verify that Node Version Manager is installed, run the following command:
 
