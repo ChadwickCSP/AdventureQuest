@@ -109,7 +109,7 @@ Source Code:
 
 ### Sign up for the project
 
-Sign up for the project here: TODO
+Sign up for the project here: [LINK](https://classroom.github.com/a/ycut8oRc)
 
 ### Clone your repository
 
