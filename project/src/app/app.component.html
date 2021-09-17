@@ -1,5 +1,16 @@
-<div id="terminal">
+<div #terminal id="terminal">
   <pre #outputArea id="output"></pre>
   <input #userInput id="userInput" type="text" (keyup.enter)="handleInput(userInput)">
   
+</div>
+
+<div #adventureList id="adventureList" style="display: none;" >
+
+  <div class="adventure" *ngFor="let adventure of adventures; let i = index">
+    <h1>{{ adventure.getName() }}</h1>
+    <h2>{{ adventure.getAuthor() }}</h2>
+    <p>{{ adventure.getDescription() }}</p>
+    <p><a href="javascript:void(0)" (click)="runAdventure(i)">Play</a></p>
+  </div>
+
 </div>

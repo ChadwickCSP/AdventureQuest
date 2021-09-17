@@ -22,3 +22,16 @@ export class InputMessage {
         this.message = message;
     }
 }
+
+export class PickAdventureMessage {
+    public readonly TYPE = "PickAdventureMessage";
+}
+
+export class RunAdventureMessage {
+    public readonly index: number;
+    public readonly TYPE = "RunAdventureMessage";
+
+    constructor(index: number){
+        this.index = index;
+    }
+}

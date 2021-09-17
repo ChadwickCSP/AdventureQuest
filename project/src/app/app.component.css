@@ -22,3 +22,9 @@
     font-family: monospace;
     font-size: 22px;
 }
+
+#adventureList {
+    width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+}

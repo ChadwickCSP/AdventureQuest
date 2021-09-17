@@ -1,6 +1,6 @@
 /// <reference lib="webworker" />
 import { config } from "src/config/config";
-import { InputMessage, PrintMessage } from "src/support/messages";
+import { InputMessage, PickAdventureMessage, PrintMessage } from "src/support/messages";
 import { Engine } from "../support/engine";
 
 interface PrintQueueElement {
@@ -117,13 +117,16 @@ class WorkerEngine implements Engine {
 const engine: WorkerEngine = new WorkerEngine();
 
 addEventListener('message', ({ data }) => {
-  if (data === "run") {
-    let adventure = config.getAdventure();
+  if (data.TYPE === "RunAdventureMessage") {
+    let adventure = config.SINGLE_ADVENTURE_MODE ? config.getAdventure() : config.getAdventures()[data.index];
     adventure.setEngine(engine);
     console.log("Starting PrintThread.");
     engine.startPrintThread();
     console.log("Starting adventure.");
     adventure.run();
+    if(!config.SINGLE_ADVENTURE_MODE){
+      adventure.onFinish = () => postMessage(new PickAdventureMessage());
+    }
   } else if (data.TYPE == "InputMessage") {
     engine.pushInput(data);
   } else {

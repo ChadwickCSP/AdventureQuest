@@ -7,7 +7,8 @@ export class Config {
     /**
      * This variable defines if AdventureQuest should start a specific adventure
      * or list all available adventures. If true, this will run the adventure
-     * returned by {@link Config.getAdventure}. Otherwise, a list of 
+     * returned by {@link Config.getAdventure}. Otherwise, a list of the adventures
+     * will appear for the player to select.
      */
     public readonly SINGLE_ADVENTURE_MODE = true;
 

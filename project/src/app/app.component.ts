@@ -1,5 +1,7 @@
 import { AfterViewInit, Component, ElementRef, OnInit, ViewChild } from '@angular/core';
-import { InputMessage, PrintMessage } from 'src/support/messages';
+import { config } from 'src/config/config';
+import { ITextAdventure } from 'src/support/adventure';
+import { InputMessage, PrintMessage, RunAdventureMessage } from 'src/support/messages';
 
 
 @Component({
@@ -14,21 +16,38 @@ export class AppComponent implements OnInit, AfterViewInit {
   @ViewChild('outputArea') el!: ElementRef;
   private outputArea!: HTMLPreElement;
 
+  @ViewChild('terminal') terminalEl!: ElementRef;
+  private terminal!: HTMLDivElement;
+
+  @ViewChild('adventureList') adventureListEl!: ElementRef;
+  private adventureList!: HTMLDivElement;
+
+  public adventures: Array<ITextAdventure> = config.getAdventures();
+  
+
   ngAfterViewInit(): void {
     this.outputArea = this.el.nativeElement;
+    this.adventureList = this.adventureListEl.nativeElement;
+    this.terminal = this.terminalEl.nativeElement;
 
     if (typeof Worker !== 'undefined') {
-      // Create a new
+      // Create a new Worker
       this.worker = new Worker(new URL('./app.worker', import.meta.url));
       this.worker.onmessage = ({ data }) => {
-        if(data.TYPE == "PrintMessage"){
+        if(data.TYPE === "PrintMessage"){
           this.processPrintMessage(data);
           
+        } else if (data.TYPE === "PickAdventureMessage") {
+          this.pickAdventure();
         } else {
           console.log("Received unknown message: " + data);
         }
       };
-      this.worker.postMessage("run");
+      if(config.SINGLE_ADVENTURE_MODE){
+        this.worker.postMessage(new RunAdventureMessage(0));
+      } else {
+        this.pickAdventure();
+      }
     } else {
       // Web Workers are not supported in this environment.
       // You should add a fallback so that your program still executes correctly.
@@ -47,11 +66,22 @@ export class AppComponent implements OnInit, AfterViewInit {
     this.outputArea.scrollTop = this.outputArea.scrollHeight;
   }
 
+  private pickAdventure(): void {
+    this.terminal.style.display = "none";
+    this.adventureList.style.display = "block";
+  }
+
 
   public handleInput(inputBox: HTMLInputElement): void {
     const userInput: string = inputBox.value;
     inputBox.value = "";
     this.worker?.postMessage(new InputMessage(userInput));
+  }
+
+  public runAdventure(index: number): void {
+    this.terminal.style.display = "block";
+    this.adventureList.style.display = "none";
+    this.worker?.postMessage(new RunAdventureMessage(index));
   }
 
 }

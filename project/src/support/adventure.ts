@@ -1,3 +1,4 @@
+import { config } from "src/config/config";
 import { Engine } from "./engine";
 import { IRoom } from "./room";
 
@@ -123,7 +124,7 @@ export interface ITextAdventure {
      * ```
      */
     gameWon(): void;
-    
+
     /**
      * This method is called when the adventure begins. It should clear all variables to their default
      * values, display a title screen, and specify the room the player starts in.
@@ -134,6 +135,11 @@ export interface ITextAdventure {
      * This method is the main loop of the adventure. 
      */
     run(): Promise<void>;
+
+    /**
+     * This method is called when the game is either won or lost.
+     */
+    onFinish(): void;
 }
 
 /**
@@ -179,21 +185,17 @@ export abstract class AbstractTextAdventure implements ITextAdventure {
         return output;
     }
 
-    private DisplayRoomName() : void
-    {
+    private DisplayRoomName(): void {
         const roomName: string = this.room.getName(this);
-        let end: string = " |" ;
+        let end: string = " |";
         let border: string = "=-";
-        for (let ix = 0; ix < roomName.length; ix++)
-        {
+        for (let ix = 0; ix < roomName.length; ix++) {
             border += ix % 2 == 0 ? "=" : "-";
         }
-        if (roomName.length % 2 == 1)
-        {
+        if (roomName.length % 2 == 1) {
             border += "-=";
         }
-        else
-        {
+        else {
             border += "=-=";
             end = "  |";
         }
@@ -215,13 +217,33 @@ export abstract class AbstractTextAdventure implements ITextAdventure {
         this._gameWon = true;
     }
 
+    onFinish(): void {
+        this.run();
+    }
+
     public async run() {
+        this._gameWon = false;
+        this._gameLost = false;
         this.room = await this.onStart();
+        
         while (!this._gameWon && !this._gameLost) {
             this.DisplayRoomName();
             await this.sleep(.5);
             this.print(this.room.getDescription(this) + "\n");
             this.room = await this.room.handleInput(this);
         }
+
+        if (this._gameWon) {
+            this.print("\nCongratulations, you won!\n\n");
+            this.print("\nPress Enter to Continue...\n");
+            await this.getInput();
+        } else if (this._gameLost) {
+            this.print("\nGame Over!\n\n");
+            this.print("\nPress Enter to Continue...\n");
+            await this.getInput();
+        }
+
+       this.onFinish();
+
     }
 }
