@@ -15,6 +15,12 @@ echo 'export NVM_DIR="$HOME/.nvm"' >> ~/.bashrc
 echo "[ -s \"$INSTALL_LOCATION/nvm.sh\" ] && . \"/usr/local/opt/nvm/nvm.sh\"  # This loads nvm" >> ~/.bashrc
 echo "[ -s \"$INSTALL_LOCATION/etc/bash_completion.d/nvm\" ] && . \"$INSTALL_LOCATION/etc/bash_completion.d/nvm\"  # This loads nvm bash_completion" >> ~/.bashrc
 
+echo '' >> ~/.bash_rc
+echo 'export NVM_DIR="$HOME/.nvm"' >> ~/.bash_rc
+echo "[ -s \"$INSTALL_LOCATION/nvm.sh\" ] && . \"/usr/local/opt/nvm/nvm.sh\"  # This loads nvm" >> ~/.bash_rc
+echo "[ -s \"$INSTALL_LOCATION/etc/bash_completion.d/nvm\" ] && . \"$INSTALL_LOCATION/etc/bash_completion.d/nvm\"  # This loads nvm bash_completion" >> ~/.bash_rc
+
+
 echo '' >> ~/.zshrc
 echo 'export NVM_DIR="$HOME/.nvm"' >> ~/.zshrc
 echo "[ -s \"$INSTALL_LOCATION/nvm.sh\" ] && . \"/usr/local/opt/nvm/nvm.sh\"  # This loads nvm" >> ~/.zshrc
