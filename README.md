@@ -212,14 +212,12 @@ To install Homebrew:
 After Homebrew is installed, you can install Node Version Manager by running the
 following commands:
 
-1. `brew update`
-2. `brew install nvm`
-3. Download [install-nvm.command.zip](support/install-nvm.command.zip)
-4. Unzip the file
-5. In your terminal type `bash` (don't press enter) 
-6. Drag and drop the `install-nvm.command` file into the terminal
-7. Press enter
-8. Close your terminal window, and open a new one
+1. Download [install-nvm.command.zip](support/install-nvm.command.zip)
+2. Unzip the file
+3. In your terminal type `bash` (don't press enter) 
+4. Drag and drop the `install-nvm.command` file into the terminal
+5. Press enter
+6. Close your terminal window, and open a new one
 
 To verify that Node Version Manager is installed, run the following command:
 
