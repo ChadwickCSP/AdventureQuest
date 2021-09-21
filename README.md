@@ -250,8 +250,8 @@ To create a server to run the project:
 
 ## Milestone 1
 
-* **E Period** - Wednesday, September 22nd @ 11:59PM
-* **C Period** - Thursday, September 23rd @ 11:59PM
+* **E Period** - Thursday, September 23rd @ 11:59PM
+* **C Period** - Friday, September 24th @ 11:59PM
 
 For this milestone, you will study the source code of [The Dragon's
 Lair](#the-dragons-lair) adventure. 
@@ -320,8 +320,8 @@ available online.
 
 ## Milestone 2
 
-* **E Period** - Tuesday, September 28th @ 11:59PM
-* **C Period** - Wednesday, September 29th @ 11:59PM
+* **E Period** - Wednesday, September 29th @ 11:59PM
+* **C Period** - Thursday, September 30th @ 11:59PM
 
 For this milestone, you will finish the implementation of a short 2 room
 adventure.
