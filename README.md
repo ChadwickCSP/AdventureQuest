@@ -289,7 +289,7 @@ A](#appendix-a-flow-chart-components). This is part of the [Computing,
 Programming, and Practice](#computing-programming-and-practice) rubric. I
 recommend using [Pencil](https://pencil.evolus.vn/) for creating your flow
 charts. If you would like to use Mx. Collard's Shape library, you can download
-it: [LINK](support/Computer%20Science%20Flowcharts.zip)
+it: [LINK](support/Computer%20Science%20Flowcharts.zip?raw=1)
 
 #### Completed Rooms
 1. [Cave Entrance](project/src/adventure/DragonsLair/rooms/CaveEntrance.ts)
