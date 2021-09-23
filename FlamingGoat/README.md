@@ -71,10 +71,6 @@ subway.
 
 #### Flowchart
 
-```typescript
-//TODO: Complete code block
-```
-
 ![Escalator Flowchart](flowcharts/Escalator-flowchart.png)
 
 

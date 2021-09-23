@@ -109,7 +109,7 @@ Source Code:
 
 ### Sign up for the project
 
-Sign up for the project here: TODO
+Sign up for the project here: [LINK](https://classroom.github.com/a/ycut8oRc)
 
 ### Clone your repository
 
@@ -155,12 +155,20 @@ To install Homebrew:
 3. Follow the on screen instruction. When you're prompted for a password, type
    the password you use to log into your computer. Installation may take some
    time.
+4. After the installation is complete, you will likely see a message saying
+   there are 2 more commands you must run. Copy and paste those commands into
+   your terminal one at a time.
 
 After Homebrew is installed, you can install Node Version Manager by running the
 following commands:
 
-1. `brew update`
-2. `brew install nvm`
+1. Download [install-nvm.command.zip](support/install-nvm.command.zip?raw=true)
+2. Unzip the file
+3. In your terminal type `bash` (don't press enter) 
+4. Drag and drop the `install-nvm.command` file into the terminal
+5. Press enter
+6. You should see the installation running.
+7. When completed, you need to reopen your terminal. Close your terminal window, and open a new one.
 
 To verify that Node Version Manager is installed, run the following command:
 
@@ -242,8 +250,8 @@ To create a server to run the project:
 
 ## Milestone 1
 
-* **E Period** - Wednesday, September 22nd @ 11:59PM
-* **C Period** - Thursday, September 23rd @ 11:59PM
+* **E Period** - Thursday, September 23rd @ 11:59PM
+* **C Period** - Friday, September 24th @ 11:59PM
 
 For this milestone, you will study the source code of [The Dragon's
 Lair](#the-dragons-lair) adventure. 
@@ -281,7 +289,7 @@ A](#appendix-a-flow-chart-components). This is part of the [Computing,
 Programming, and Practice](#computing-programming-and-practice) rubric. I
 recommend using [Pencil](https://pencil.evolus.vn/) for creating your flow
 charts. If you would like to use Mx. Collard's Shape library, you can download
-it: [LINK](support/Computer%20Science%20Flowcharts.zip)
+it: [LINK](support/Computer%20Science%20Flowcharts.zip?raw=1)
 
 #### Completed Rooms
 1. [Cave Entrance](project/src/adventure/DragonsLair/rooms/CaveEntrance.ts)
@@ -312,8 +320,8 @@ available online.
 
 ## Milestone 2
 
-* **E Period** - Tuesday, September 28th @ 11:59PM
-* **C Period** - Wednesday, September 29th @ 11:59PM
+* **E Period** - Wednesday, September 29th @ 11:59PM
+* **C Period** - Thursday, September 30th @ 11:59PM
 
 For this milestone, you will finish the implementation of a short 2 room
 adventure.
