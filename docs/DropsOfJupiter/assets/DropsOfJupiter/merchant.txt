@@ -1,0 +1,5 @@
+One of many shops in the [starport], this one caught your eye. The merchant,
+dressed in all manner of robes and hats and trinkets, smiles at you warmly. 
+'Welcome, good souls!' a friendly sign reads above a mess of wares. This 
+character seems interesting... why don't you [talk] to them? They might have 
+something you need! I've heard they can never seem to stop talking, though...

@@ -1,0 +1,14 @@
+You find yourself in the Starport. As your eyes adjust to the shimmering lights and 
+bustling crowd, you feel the cold [alleyway] behind you, some sort of decorated 
+[ship] bobbing peacefully in the harbor, an imposing [bank] which seems to be 
+glaring at you menacingly, and dubious [merchant] with an extravagant stall,
+nonetheless. 
+
+The seaport's buildings offer cheerful contrast to the apocolypse 
+in the sky above–the [lamppost], decorated with fluttering flags, stands sentinel 
+against the ocean, and on a windowsill you notice a cute [plant] directly across 
+from an ornamental [fountain]. While being suprisingly clean and orderly, on the 
+ground you notice a strange spool of [tape].
+
+Where to go? What to do? 
+[alleyway][ship][bank][merchant][lamppost][plant][fountain][tape]
