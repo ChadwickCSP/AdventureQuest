@@ -1,0 +1,9 @@
+After slinking for a while in the shadows, you make it to the ship. Its 
+draconian head rises above the ocean of stars, and its long, limber sails
+rest like elegant wings. These Dragonships travel between the galaxies, 
+transporting passengers to worlds beyond the realm of imagination... the 
+perfect escape––rumor is, they're actually alive. With one last look at 
+the [starport], you scramble up the rope ladder into the ship's hold.
+
+Inside you find a tattered scroll among other maritime instruments. Maybe 
+you should [read] it?
